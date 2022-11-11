@@ -1,11 +1,18 @@
 
-import './App.css';
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Home from "./pages/Home";
+import DefaultLayout from "./components/Layout/DefaultLayout";
 
 function App() {
   return (
-    <div className="App">
-        <div class="bg-white py-12">hj</div>
-    </div>
+  <Router>
+      <div className="App">
+        <Routes>
+          <Route path="/" element={<DefaultLayout><Home /></DefaultLayout>} />
+        </Routes>
+         
+      </div>
+  </Router>
   );
 }
 

@@ -1,4 +1,19 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="936" height="266" viewBox="0 0 936 266">
+
+import classNames from "classnames/bind";
+import styles from '../Sidebar/Sidebar.module.scss';
+import { Link } from "react-router-dom";
+import NavbarItem from "../../components/NavbarItem";
+
+
+const cx = classNames.bind(styles);
+
+
+function Sidebar() {
+    return <div className={cx('wrapper')}>
+        <div className={cx('logo')}>
+        <Link  className={cx('logo-link')}>
+                <img alt=""/>
+                <svg xmlns="http://www.w3.org/2000/svg" width="120" height="40" viewBox="0 0 936 266">
     <g fill="none" fill-rule="evenodd">
         <g>
             <g>
@@ -12,3 +27,13 @@
         </g>
     </g>
 </svg>
+
+          
+        </Link>
+        <NavbarItem></NavbarItem>
+
+        </div>
+    </div>
+}
+
+export default Sidebar;
