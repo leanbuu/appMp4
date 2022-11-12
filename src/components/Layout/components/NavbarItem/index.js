@@ -7,10 +7,11 @@ const cx = classNames.bind(styles);
 
 function NavbarItem( {data} ) {
     return ( 
-        <div className={cx('navbar-item')}>
-            <img src={data.img} className={cx('icon')}  alt="" />
-            <div className={cx('name')}><span>{data.title}</span></div>
-        </div>
+            <div className={cx('navbar-item')}>
+                <img src={data.img} className={cx('icon')}  alt="" />
+                <div className={cx('name')}><span>{data.title}</span></div>
+            </div>
+
      );
 }
 

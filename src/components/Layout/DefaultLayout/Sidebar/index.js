@@ -9,24 +9,24 @@ const cx = classNames.bind(styles);
 
 const MENU_ITEMS = [
     {
-        img: <img src={icon1} alt=""></img>,
+        img: icon1,
         title: 'Cá Nhân',    
     },
     {
-        img: <img src={icon1} alt=""></img>,
-        title: 'Cá Nhân',    
+        img: icon1,
+        title: 'Khám Phá',    
     },
     {
-        img: <img src={icon1} alt=""></img>,
-        title: 'Cá Nhân',    
+        img: icon1,
+        title: '#zingchart',    
     },
     {
-        img: <img src={icon1} alt=""></img>,
-        title: 'Cá Nhân',    
+        img: icon1,
+        title: 'Radio',    
     },
     {
-        img: <img src={icon1} alt=""></img>,
-        title: 'Cá Nhân',    
+        img: icon1,
+        title: 'Theo Dõi',    
     },
 ]
 
