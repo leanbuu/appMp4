@@ -2,10 +2,33 @@
 import classNames from "classnames/bind";
 import styles from '../Sidebar/Sidebar.module.scss';
 import { Link } from "react-router-dom";
-import NavbarItem from "../../components/NavbarItem";
-
+import MenuNavbar from "../../components/MenuNavbar";
+import icon1 from '../../../../assets/KhamPha.png'
 
 const cx = classNames.bind(styles);
+
+const MENU_ITEMS = [
+    {
+        img: <img src={icon1} alt=""></img>,
+        title: 'Cá Nhân',    
+    },
+    {
+        img: <img src={icon1} alt=""></img>,
+        title: 'Cá Nhân',    
+    },
+    {
+        img: <img src={icon1} alt=""></img>,
+        title: 'Cá Nhân',    
+    },
+    {
+        img: <img src={icon1} alt=""></img>,
+        title: 'Cá Nhân',    
+    },
+    {
+        img: <img src={icon1} alt=""></img>,
+        title: 'Cá Nhân',    
+    },
+]
 
 
 function Sidebar() {
@@ -30,9 +53,14 @@ function Sidebar() {
 
           
         </Link>
-        <NavbarItem></NavbarItem>
-
+        
         </div>
+        <div className={cx('menu-navbar-item')}>
+            <MenuNavbar items={MENU_ITEMS}>
+
+            </MenuNavbar>
+
+         </div> 
     </div>
 }
 
