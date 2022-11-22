@@ -20,9 +20,11 @@
         caret-color: var(--white);
         background-color: transparent;
     }
+    input:focus {
+        outline: none;
+     }
 
 }
-
 
 .inputt-text{
     margin: 0;

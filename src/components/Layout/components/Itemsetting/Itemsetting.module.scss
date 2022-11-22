@@ -1,0 +1,17 @@
+.setting{
+    margin-left: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--alpha-bg);
+    border-color: transparent;
+    align-items: center;
+    &:hover{
+        background-color: hsl(267deg 20% 18%);
+    }
+}
+.icon-setting{
+    padding-top: 2px;
+    padding-left: 0.5px;
+    cursor: pointer;
+}

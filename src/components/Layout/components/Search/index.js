@@ -10,7 +10,7 @@ function Search() {
     return ( 
         <div className={cx('search')}>
             <div className={cx('inputt')}>
-            <input className={cx('inputt-text')}
+            <input type='text' className={cx('inputt-text')}
                 placeholder="Tìm kiếm bài hát, nghệ sĩ, lời bài hát..."
             ></input>
             </div>
