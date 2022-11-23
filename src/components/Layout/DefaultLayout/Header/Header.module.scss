@@ -14,7 +14,14 @@
 }
 
 .menu-item{
-    padding-right: 59px;
+    display: flex;
+    align-items: center;
     float: right;
-    padding-left: 164px;
+}
+
+.btn-item{
+    position: relative;
+    background-color: transparent;
+    color: #161823;
+    cursor: pointer;
 }
