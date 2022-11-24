@@ -1,5 +1,6 @@
 
 import classNames from "classnames/bind";
+import { useState } from "react";
 import styles from '../MenuNavbar/MenuNavbar.module.scss';
 import NavbarItem from "../NavbarItem";
 
@@ -7,9 +8,12 @@ const cx = classNames.bind(styles);
 
 
 function MenuNavbar({ items = [] }) {
-    const renderItems = () =>{
+    const [active, setActive] = useState(1);
+    const renderItems = () => {
         return items.map((item, index) => (
-            <NavbarItem key={index} data={item} />
+            <div className={`${styles.navbar} ${item?.id === active ?styles.active:""}`} onClick={() => setActive(item?.id)}>
+                <NavbarItem key={item.id} data={item} bien={active}/>
+            </div>
         ))
     }
     return ( 

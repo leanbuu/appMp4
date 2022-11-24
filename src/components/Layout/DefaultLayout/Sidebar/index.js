@@ -3,29 +3,38 @@ import classNames from "classnames/bind";
 import styles from '../Sidebar/Sidebar.module.scss';
 import { Link } from "react-router-dom";
 import MenuNavbar from "../../components/MenuNavbar";
-import icon1 from '../../../../assets/KhamPha.png'
+import icon1 from '../../../../assets/Icon-canhan.png'
+import icon2 from '../../../../assets/KhamPha.png'
+import icon3 from '../../../../assets/Icon-zing.png'
+import icon4 from '../../../../assets/Icon-radio.png'
+import icon5 from '../../../../assets/Icon-theodoi.png'
 
 const cx = classNames.bind(styles);
 
 const MENU_ITEMS = [
     {
+        id: 1,
         img: icon1,
         title: 'Cá Nhân',    
     },
     {
-        img: icon1,
+        id: 2,
+        img: icon2,
         title: 'Khám Phá',    
     },
     {
-        img: icon1,
+        id: 3,
+        img: icon3,
         title: '#zingchart',    
     },
     {
-        img: icon1,
+        id: 4,
+        img: icon4,
         title: 'Radio',    
     },
     {
-        img: icon1,
+        id: 5,
+        img: icon5,
         title: 'Theo Dõi',    
     },
 ]

@@ -1,6 +1,7 @@
-.navbar-item {
+.navbar_item{
     font-weight: 700;
-    border-left: 3px solid transparent;
+    border-left: 4px solid transparent;
+    color: var(--text-navi);
     display: flex;
     align-items: center;
     font-weight: 700;
@@ -8,10 +9,17 @@
     height: 24px;
     font-size: 13px;
     cursor: pointer;
-    color: var(--text-navi);
     &:hover{
         color: var(--white);
     }
+    &.active{
+      border-left:  4px solid #9b4de0;
+
+      color: var(--white);
+      
+      
+    }
+   
 }
 
 .icon{
