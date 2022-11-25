@@ -1,5 +1,4 @@
 
-
 :root {
     --side-bg: rgb(35 27 46);
     --layout-bg: #170f23;
@@ -8,7 +7,9 @@
     --width-sidebar: 240px;
     --focus-bg:  hsla(0,0%,100%,0.1);
     --text-navi: #dadada;
-    --alpha-bg: hsl(0deg 0% 100% / 10%)
+    --alpha-bg: hsl(0deg 0% 100% / 10%);
+    --default-layout-width: 1150px;
+    --default-layout-horizontal-spacer: 24px; 
 }
 
 body {
@@ -29,3 +30,5 @@ body .tippy-box{
     font-family: Inter,sans-serif;
     margin-left: 10px;
 }
+
+//DefaultLayoy

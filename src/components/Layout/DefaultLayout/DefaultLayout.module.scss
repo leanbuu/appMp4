@@ -1,0 +1,32 @@
+
+
+.wrapper{
+   display: flex;
+   flex-direction: column;
+   font-family: Inter,sans-serif;
+   font-size: 14px;
+    font-weight: 400;
+    -ms-scroll-chaining: none;
+    overscroll-behavior: none;
+    overflow: hidden;
+}
+
+.container{
+    display: flex;
+    position: fixed;
+    min-height: 100%;
+    left: 240px;
+    top: 0;
+    right: 0;
+    height: 80px;
+    padding: 0 59px;
+    z-index: 99;
+    transition: right 0.4s;
+    background-color: var(--layout-bg);
+}
+
+.content {
+    position: relative;
+    flex: 1;
+    margin-top: 73px;
+}

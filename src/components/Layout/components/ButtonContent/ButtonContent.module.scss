@@ -1,0 +1,23 @@
+
+.select{
+    padding: 4px 24px;
+    border: 1px solid hsl(0deg 0% 100% / 10%);
+    border-radius: 100px;
+    font-weight: 400;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-right: 15px;
+    cursor: pointer;
+    background-color: transparent;
+    color: var(--white);
+    &:hover{
+        color: var(--text-navi);
+    }
+    &.active{
+        background-color: #9b4de0;
+        &:hover{
+            background-color: #8b45ca;
+        }
+      }
+}
+
