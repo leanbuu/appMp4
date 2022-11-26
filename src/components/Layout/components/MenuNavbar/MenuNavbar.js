@@ -7,12 +7,15 @@ import NavbarItem from "../NavbarItem/NavbarItem";
 const cx = classNames.bind(styles);
 
 function MenuNavbar({ items = [] }) {
-    const [active, setActive] = useState(1);
+    const [active, setActive] = useState(2);
     const renderItems = () => {
         return items.map((item, index) => (
-            <div className={`${styles.navbar} ${item?.id === active  ?styles.active:""}`} onClick={() => setActive(item?.id)}>
-                <NavbarItem key={item.id} data={item} bien={active}/>
-            </div>
+            <>
+                {item.id === 6 && <div className={cx('divive')}></div>}
+                <div className={`${styles.navbar} ${item?.id === active  ?styles.active:""}`} onClick={() => setActive(item?.id)}>
+                    <NavbarItem key={item.id} data={item} bien={active}/>
+                </div>
+            </>
         ))
     }
     return ( 

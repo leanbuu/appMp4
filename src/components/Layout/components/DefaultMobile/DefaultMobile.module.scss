@@ -1,0 +1,21 @@
+.wrappermobi{
+    line-height: 1.5;
+    font-family: Roboto,sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    background-color: #fcfcfc;
+    overscroll-behavior: none;
+    -webkit-text-size-adjust: 100%;
+    min-height: 100vh;
+    max-width: 768px;
+    margin: 0 auto;
+}
+
+.containermobi{
+    position: fixed;
+    height: 60px;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+    align-items: center;
+}

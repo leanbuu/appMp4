@@ -1,0 +1,27 @@
+.header{
+    background-color: #fcfcfc;
+    position: relative;
+    height: 50px;
+    display: flex;
+}
+
+.btnheader{
+    border-color: transparent !important;
+    width: 30px;
+    height: 50px;
+    background-color: transparent;
+}
+
+.icon{
+    width: 30px;
+    height: 30px;
+}
+
+
+.imglogo{
+    position: absolute;
+    top: 10px;
+    left: 148px;
+    width: 100px;
+    height: 32px;
+}
