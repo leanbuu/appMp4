@@ -39,7 +39,7 @@
     position: relative;
     display: block;
     width: var(--width-sidebar) ;
-    height: 200px;
+    height: 190px;
     background-color: aliceblue;
     margin-top: 15px;
     color: var(--white);
@@ -47,9 +47,9 @@
 }
 
 .vip-banner{
-    padding: 15px 8px;
+    padding: 7px 8px;
     border-radius: 8px;
-    margin: 10px 20px;
+    margin: 5px 20px;
     text-align: center;
     background-image: linear-gradient(117deg,#5a4be7,#c86dd7 102%);
 }
@@ -78,7 +78,7 @@
     position: fixed;
     width: 240px;
     left: 0;
-    height: 54px;
+    height: 47px;
     border-top: 1px solid #393243 !important;
     border: 0px ;
     padding: 0 28px;

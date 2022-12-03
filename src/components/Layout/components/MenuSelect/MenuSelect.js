@@ -19,6 +19,9 @@ function MenuSelect({ items = [] }) {
     return ( 
     <div className={cx('menu-select')}>
     {renderItems()}
+    <div className={cx('dis')}>
+    <button className={cx('btn')}> TẤT CẢ  </button>
+    </div>
     </div> 
     );
 }

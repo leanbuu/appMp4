@@ -1,0 +1,64 @@
+.media{
+    width: 278px;
+    height: 60px;
+    align-items: center;
+    display: flex;
+    text-align: left;
+    padding: 10px;
+    border-radius: 5px;
+    &:hover{
+        background-color: #2f2739;
+    }
+}
+
+.img{
+    height: 60px;
+    width: 60px;
+    margin-right: 10px;
+}
+
+.img-media{
+    height: 60px;
+    width: 60px;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+.card-info{
+    width: 208px;
+    height: 60px;
+    flex-direction: column;
+}
+
+.tieude{
+    line-height: 1.3;
+    text-transform: none;
+    display: flex;
+    align-items: center;
+    font-family: Inter,sans-serif;
+    font-size: 14px;
+    color: var(--white);
+    font-weight: 550;
+    text-transform: none;
+    cursor: default;
+}
+.casi{
+    font-size: 12px;
+    margin-top: 3px;
+    color: hsl(262deg 5% 48%);
+    font-size: 12px;
+    font-weight: 550;
+    cursor: pointer;
+    &:hover{
+        color: #c273ed;
+        text-decoration: underline;
+    }
+}
+.thoigian{
+    font-size: 12px;
+    margin-top: 3px;
+    color: hsl(262deg 5% 48%); 
+    font-size: 12px;   
+    font-weight: 550; 
+    cursor: default; 
+}

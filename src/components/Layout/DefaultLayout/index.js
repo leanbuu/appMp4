@@ -7,6 +7,7 @@ import Sidebar from "./Sidebar";
 import MenuSelect from "../components/MenuSelect";
 import { useEffect, useState } from "react";
 import DefaultMobile from "../components/DefaultMobile";
+import MenuMedia from "../components/MenuMedia";
 
 
 const cx = classNames.bind(styles);
@@ -61,6 +62,7 @@ function DefaultLayout({ children }) {
                     <Header />
                     <div className={cx('content')}>
                     <MenuSelect items={SELECT}></MenuSelect>
+                    <MenuMedia />
                     </div>
                 </div>
             </div>
