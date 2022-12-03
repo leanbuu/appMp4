@@ -8,6 +8,7 @@ import MenuSelect from "../components/MenuSelect";
 import { useEffect, useState } from "react";
 import DefaultMobile from "../components/DefaultMobile";
 import MenuMedia from "../components/MenuMedia";
+import Carousel from "../components/Carousel";
 
 
 const cx = classNames.bind(styles);
@@ -63,7 +64,21 @@ function DefaultLayout({ children }) {
                     <div className={cx('content')}>
                     <MenuSelect items={SELECT}></MenuSelect>
                     <MenuMedia />
+                    <div className={cx('playlist')}>
+                        <div className={cx('list')}>
+                            <div className={cx('title')}>Có Thể Bạn Muốn Nghe</div>
+                            <Carousel />
+                        </div>
+                        <div style={{marginTop: '48px'}} className={cx('list')}>
+                            <div className={cx('title')}>Nhạc Mới Mỗi Ngày</div>
+                            <Carousel />
+                        </div>
                     </div>
+                    </div>
+                </div>
+                <div className={cx('thumb')}>
+                    <div className={cx('thumb-ver')}></div>
+            
                 </div>
             </div>
             : <DefaultMobile />

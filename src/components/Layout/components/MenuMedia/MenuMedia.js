@@ -19,6 +19,30 @@ function MenuMedia() {
             <div className={cx('boc')}>
                 <Media />
             </div>
+            <div className={cx('boc')}>
+                <Media />
+            </div>
+            <div className={cx('boc')}>
+                <Media />
+            </div>
+            <div className={cx('boc')}>
+                <Media />
+            </div>
+            <div className={cx('boc')}>
+                <Media />
+            </div>
+            <div className={cx('boc')}>
+                <Media />
+            </div>
+            <div className={cx('boc')}>
+                <Media />
+            </div>
+            <div className={cx('boc')}>
+                <Media />
+            </div>
+            <div className={cx('boc')}>
+                <Media />
+            </div>
         </div>
      );
 }
