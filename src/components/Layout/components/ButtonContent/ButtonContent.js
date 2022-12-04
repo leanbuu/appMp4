@@ -1,8 +1,8 @@
-
+// eslint-disable-next-line 
 import classNames from "classnames/bind";
 import styles from '../ButtonContent/ButtonContent.module.scss'
 
-const cx = classNames.bind(styles);
+
 
 function ButtonContent( { data, bien }) {
     let active = bien;

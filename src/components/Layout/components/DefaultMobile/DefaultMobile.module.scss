@@ -4,15 +4,13 @@
     font-size: 14px;
     font-weight: 400;
     background-color: #fcfcfc;
-    overscroll-behavior: none;
-    -webkit-text-size-adjust: 100%;
     min-height: 100vh;
     max-width: 768px;
     margin: 0 auto;
 }
 
 .containermobi{
-    position: fixed;
+    position: relative;
     height: 60px;
     top: 0;
     width: 100%;

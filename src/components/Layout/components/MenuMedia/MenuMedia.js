@@ -44,6 +44,7 @@ function MenuMedia() {
                 <Media />
             </div>
         </div>
+        
      );
 }
 

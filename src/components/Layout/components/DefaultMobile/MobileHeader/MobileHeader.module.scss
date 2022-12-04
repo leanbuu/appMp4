@@ -21,7 +21,37 @@
 .imglogo{
     position: absolute;
     top: 10px;
-    left: 148px;
+    left: 130px;
     width: 100px;
     height: 32px;
+}
+
+.user{
+    position: absolute;
+    right: 0;
+    display: flex;
+    top: 12px;
+    margin-bottom: 7px;
+}
+.imgsearch{
+    width: 26px;
+    height: 24px;
+    margin-right: 10px;
+    align-items: center;
+    margin-top: 4px;
+}
+.btnavarta{
+    border: 0px transparent;
+    padding: 0;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    margin-bottom: 9px;
+    background-color: #fcfcfc;
+}
+.imgavarta{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    left: 0px;
 }
