@@ -55,3 +55,37 @@
     border-radius: 50%;
     left: 0px;
 }
+.show{
+    display: block;
+}
+
+.navi{
+    position: fixed;
+    z-index: 1000;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(42,43,63,.74);
+    
+.navi-con{
+    position: absolute;
+    width: calc(100vw - 50px);
+    background-color: #fff;
+    height: 100%;
+    transition: transform .1s;
+}
+}
+
+.usernavi{
+    position: relative;
+    width: 270px;
+    height: 124.13px;
+    background-color: #f7f7f7;
+    padding: 16px 20px;
+    display: flex;
+}
+.btn-close{
+    background-color: #fff;
+    border: 0px transparent;
+    display: inline-block;
+}
