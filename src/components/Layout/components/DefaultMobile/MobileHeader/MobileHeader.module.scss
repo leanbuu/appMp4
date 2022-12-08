@@ -79,7 +79,7 @@
     width: calc(100vw - 50px);
     height: 100%;
     z-index: 2000;
-    left: -320px;
+    left: -100%;
     transition:   0.5s all;
     &.active{
         left: 0px;
