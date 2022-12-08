@@ -91,7 +91,7 @@
 
 .navi-con{
     position: absolute;
-    width: calc(100vw - 50px);
+    width: 100%;
     background-color: #fff;
     height: 100%;
 }
@@ -99,7 +99,6 @@
 
 .usernavi{
     position: relative;
-    width: 270px;
     height: 124.13px;
     background-color: #f7f7f7;
     padding: 16px 20px;
@@ -166,7 +165,7 @@
 .menu-content{
     position: fixed;
     padding: 18px;
-    width: 274px;
+    width: calc(100vw - 86px);
     overflow: auto;
     height: 556px;
 }
