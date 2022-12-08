@@ -80,10 +80,10 @@
     height: 100%;
     z-index: 2000;
     left: -320px;
-    transition:   0.45s all;
+    transition:   0.5s all;
     &.active{
         left: 0px;
-        transition:   0.45s all;
+        transition:   0.5s all;
      }
 
 }
@@ -94,7 +94,6 @@
     width: calc(100vw - 50px);
     background-color: #fff;
     height: 100%;
-    transition: transform 0.5s; 
 }
 
 
@@ -106,10 +105,72 @@
     padding: 16px 20px;
     display: flex;
 }
+.card-info{
+    position: relative;
+    margin-left: 20px;
+    margin-top: 20px;
+    width: 180px;
+    height: 104.13;
+}
+
+.title{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.36;
+    color: #32323d;
+}
+
+.user-action{
+    height: 71.63px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 11px;
+}
+.vip{
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 4px;
+    background-color: #f8e71c;
+    text-align: center;
+    padding: 7px 20px;
+    font-weight: 500;
+    font-size: 12px!important;
+    margin: 5px 10px 0px 0px;
+    width: 80px;
+    height: 16.313px;
+    color: #32323d;
+}
+.code{
+    background-color: transparent;
+    box-shadow: 0 0 0 1px black;
+    margin-left: 1px;
+    overflow: hidden;
+    border-radius: 4px;
+    padding: 7px 20px;
+    font-weight: 500;
+    font-size: 12px!important;
+    margin: 5px 10px 0px 1px;
+    width: 80px;
+    height: 16.313px;
+    color: #32323d;
+}
+
 .btn-close{
     background-color:#f7f7f7;
     border: 0px transparent;
     position: absolute;
-    top: 15px;
-    right: 15px;
+    top: 9px;
+    right: 8px;
+}
+.menu-content{
+    position: fixed;
+    padding: 18px;
+    width: 274px;
+    overflow: auto;
+    height: 556px;
+}
+.menu-list{
+    position: relative;
+    overflow: auto;
 }

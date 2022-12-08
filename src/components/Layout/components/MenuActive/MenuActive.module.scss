@@ -1,0 +1,11 @@
+.menu-active{
+    overflow: auto;
+    height: 581px;
+}
+.itemactive{
+    font-size: 16px;
+    color: #92929D;
+    &.active{
+        color: #65509E;
+    }
+}

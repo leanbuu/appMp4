@@ -6,7 +6,6 @@ import { useState } from 'react';
 
 const cx = classNames.bind(styles);
 
-
 function MenuInner( {items = []}) {
     const [active, setActive] = useState(1);
     const renderItems = () => {

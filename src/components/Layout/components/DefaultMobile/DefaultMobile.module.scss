@@ -16,3 +16,15 @@
     z-index: 99;
     align-items: center;
 }
+.containermobi ::-webkit-scrollbar {
+    width: 6px;
+    height: 0;
+}
+
+.containermobi ::-webkit-scrollbar-thumb {
+    background: #dbdbdb;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+
+}
