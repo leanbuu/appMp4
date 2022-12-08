@@ -1,12 +1,12 @@
 .wrapper{
     position: relative;
     width: var(--width-sidebar);
-    height: 100%;
+    height: (100vw-47) ;
     padding-top: 70px;
     padding-bottom: 54px;
     background-color: var(--side-bg); ;
     float: left;
-
+    overflow: auto;
 }
 .logo{
     width: 187px;
