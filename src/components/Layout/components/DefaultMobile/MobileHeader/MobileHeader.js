@@ -30,26 +30,31 @@ const INNER = [
 
 
 function MobileHeader() {
-   const [dis, setDis] = useState('none')
-   const [con, setCon] = useState('100%')
+   const [active, setActive] = useState(false)
    function handleShow() {
-      setDis('block');
-      setCon('0%')
+   setActive(true);
    }
    function handleClose() {
-      setDis('none');
-      setCon('100%')
+      
+   setActive(false);
    }
+
+   console.log(active)
     return ( 
       <div>
-        <div className={cx('navi')} style={{display: dis }}>
-         <div className={cx('navi-con')}  style={{left: con}}>
+        <div className={`${styles.navi} ${active ?styles.active:""}`}>
+         </div>
+         <div className={`${styles.showuser} ${active ?styles.active:""}`}>
+         <div className={cx('navi-con')}>
          <div className={cx('usernavi')}>
             <img style={{width: '60px', height: '60px', borderRadius: '50%'}} src={avarta} alt=''></img>
+            <div className={cx('card-info')}>
+
+            </div>
+            </div>
             <button className={cx('btn-close')}  onClick={handleClose} >
                <img src={icon2} alt=''></img>
             </button>
-            </div>
          </div>
          </div>
         <div className={cx('header')}>
