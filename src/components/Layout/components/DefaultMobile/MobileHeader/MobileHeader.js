@@ -16,6 +16,7 @@ import imgsearch from '../../../../../assets/Icon-searchmobile.jpg'
 import avarta from '../../../../../assets/anhThii.jpg'
 import MenuInner from "../../MenuInner/MenuInner";
 import MenuActive from "../../MenuActive";
+import MenuSlider from "../../MenuSlider";
 
 import { useState } from "react";
 
@@ -137,7 +138,7 @@ function MobileHeader() {
            </div>
         </div>
         <MenuInner items={INNER}></MenuInner>
-       
+        <MenuSlider></MenuSlider>
         </div>
      );
 }
