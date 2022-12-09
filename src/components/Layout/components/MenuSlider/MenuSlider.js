@@ -1,3 +1,8 @@
+import React, { Component } from "react";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
+
 
 import classNames from "classnames/bind";
 import styles from '../MenuSlider/MenuSlider.module.scss';
@@ -12,10 +17,36 @@ const cx = classNames.bind(styles);
 
 
 function MenuSlider() {
+    const settings = {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 3500,
+        appendDots: dots => (
+            <div
+              style={{ 
+                bottom: '30px',
+                width: '100%',
+                height: '6px',
+                zIndex: '1000',
+
+              }}
+            >
+              <ul style={{width: '100%', height: '6px', margin: "0px", padding:'0'}}>{dots}</ul>
+            </div>
+          ),
+         
+        };
+
     return ( 
-        <div className={cx('wrpper')}>
-        <div className={cx('menu-slider')}>
-            <div className={cx('slide')}>
+        <>
+
+        <div className={cx('wrapper')}>
+        <Slider {...settings}>
+       <div className={cx('slide')}>
                 <img className={cx('img')} src={img1} alt=""></img>
                 <img className={cx('imgcon')} src={img11} alt=""></img>
             </div>
@@ -31,18 +62,10 @@ function MenuSlider() {
                 <img className={cx('img')} src={img4} alt=""></img>
                 <img className={cx('imgcon')} src={img11} alt=""></img>
             </div>
+       </Slider>
         </div>
-        <div className={cx('swiper')}>
-           <div className={cx('list-bullet')}>
-            <div className={cx('bullet')}></div>
-            <div className={cx('bullet')}></div>
-            <div className={cx('bullet')}></div>
-            <div className={cx('bullet')}></div>
-            <div className={cx('bullet')}></div>
-           </div>
-        </div>
-        </div>
-        
+       
+        </>
      );
 }
 

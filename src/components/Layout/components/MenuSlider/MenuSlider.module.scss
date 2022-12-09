@@ -30,7 +30,6 @@
     height: 100%;
     position: absolute;
 }
-
 .imgcon{
     position: absolute;
     width: 72px;
@@ -53,8 +52,7 @@
 .list-bullet{
     display: flex;
 }
-.bullet{
-   
+.bullet{ 
     height: 6px;
     width: 6px;
     background-color: #d5d6d8;
@@ -63,3 +61,6 @@
     margin: 0 4px;
     border-radius: 100%;
 }
+.slick-next:before {
+    color: #881798;
+  }
