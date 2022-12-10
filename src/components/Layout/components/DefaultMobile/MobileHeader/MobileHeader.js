@@ -10,6 +10,7 @@ import iconm5 from '../../../../../assets/Icon-mchude.jpg'
 import iconm6 from '../../../../../assets/Icon-mmv.jpg'
 import iconm7 from '../../../../../assets/Icon-malbum.jpg'
 import iconm8 from '../../../../../assets/Icon-mnhaccanhan.jpg'
+import iconm9 from '../../../../../assets/Icon-mout.jpg'
 import Imgvip from '../../../../../assets/Img-vip.png';
 import { Link } from "react-router-dom";
 import logo from '../../../../../assets/Icon-logomobi.jpg'
@@ -80,6 +81,11 @@ const ACTIVE = [
        id: 8,
        img: iconm8,
        title: 'NHẠC CÁ NHÂN',    
+   },
+   {
+       id: 9,
+       img: iconm9,
+       title: 'ĐĂNG XUẤT',    
    }
 ]
 
