@@ -5,7 +5,7 @@
     font-weight: 400;
     background-color: #fcfcfc;
     min-height: 100vh;
-    overflow: hidden;
+    overflow: auto;
 }
 
 .containermobi{
@@ -15,6 +15,10 @@
     width: 100%;
     z-index: 99;
     align-items: center;
+}
+.contentmobi{
+    overflow: hidden;
+    padding-top: 104px;
 }
 .containermobi ::-webkit-scrollbar {
     width: 6px;
@@ -28,20 +32,41 @@
     border-radius: 8px;
 
 }
-.widget{
-    position: fixed;
-    bottom: 10px;
-    left: 5%;
-    z-index: 10;
-    background-image: linear-gradient(-90deg,#4d4ea0,#efadb1);
-    width: 90%;
-    height: 50px;
+
+.banner-vip{
+    margin-top: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+    height: 121px;
+}
+.imgvip{
+    width: 100%;
+}
+.nhapcode{
+    text-align: center;
+    color: #6e6e6e;
+    display: block;
+    text-decoration: underline;
+    font-size: 13px;
+    margin-top: 11px;
     
-    line-height: 50px;
+}
+.widget{
+    background-image: linear-gradient(-90deg,#4d4ea0,#efadb1);
+    border-radius: 30px;
+    bottom: 10px;
     color: #fff;
     font-size: 14px;
+    height: 50px;
+    left: 5%;
+    line-height: 50px;
+    position: fixed;
     text-align: center;
-    border-radius: 30px;
+    width: 90%;
+    z-index: 10;
 }
 .img{
     display: inline-block;
@@ -51,4 +76,15 @@
     max-width: 36px;
     vertical-align: middle;
     margin-right: -10px;
+}
+.contair{
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+    font-weight: 5000;
+    color: #32323d;
+    margin-bottom: 5px;
+    font-size: 18px;
 }

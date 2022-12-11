@@ -11,14 +11,11 @@ import iconm6 from '../../../../../assets/Icon-mmv.jpg'
 import iconm7 from '../../../../../assets/Icon-malbum.jpg'
 import iconm8 from '../../../../../assets/Icon-mnhaccanhan.jpg'
 import iconm9 from '../../../../../assets/Icon-mout.jpg'
-import Imgvip from '../../../../../assets/Img-vip.png';
 import { Link } from "react-router-dom";
 import logo from '../../../../../assets/Icon-logomobi.jpg'
 import imgsearch from '../../../../../assets/Icon-searchmobile.jpg'
 import avarta from '../../../../../assets/anhThii.jpg'
-import MenuInner from "../../MenuInner/MenuInner";
 import MenuActive from "../../MenuActive";
-import MenuSlider from "../../MenuSlider";
 
 import { useState } from "react";
 
@@ -26,20 +23,6 @@ import { useState } from "react";
 
 
 const cx = classNames.bind(styles)
-const INNER = [
-   {
-       id: 1,
-       name: 'TRANG CHỦ'
-   },
-   {
-       id: 2,
-       name: '#ZINGCHART'
-   },
-   {
-       id: 3,
-       name: 'NHẠC CÁ NHÂN'
-   }
-]
 
 const ACTIVE = [
    {
@@ -144,12 +127,6 @@ function MobileHeader() {
                </button>  
            </div>
         </div>
-        <MenuInner items={INNER}></MenuInner>
-        <MenuSlider></MenuSlider>
-        <div className={cx('banner-vip')}>
-            <img className={cx('imgvip')} src={Imgvip} alt=''></img>
-        </div>
-        <div className={cx('nhapcode')}>Hoặc nhập code VIP</div>
         </div>
      );
 }

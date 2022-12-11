@@ -1,11 +1,13 @@
 .header{
+    width: 100%;
     background-color: #fcfcfc;
-    position: relative;
+    position: fixed;
     height: 50px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-  
+    top: 0px;
+    z-index: 10000;
 }
 .btnheader{
     border-color: transparent !important;
@@ -174,25 +176,4 @@
 .menu-list{
     position: relative;
     overflow: auto;
-}
-.banner-vip{
-    margin-top: 20px;
-    margin-right: auto;
-    margin-left: auto;
-    padding-left: 15px;
-    padding-right: 15px;
-    position: relative;
-    height: 121px;
-}
-.imgvip{
-    width: 100%;
-    height: 110px;
-}
-.nhapcode{
-    text-align: center;
-    color: #6e6e6e;
-    display: block;
-    text-decoration: underline;
-    font-size: 13px;
-    
 }
