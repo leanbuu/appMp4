@@ -12,7 +12,9 @@ import img3 from '../../../../assets/Img-slider3.jpg';
 import img4 from '../../../../assets/Img-slider4.jpg';
 import img5 from '../../../../assets/Img-slider5.jpg';
 import img11 from '../../../../assets/Img-slider11.jpg';
+import img12 from '../../../../assets/Img-slider22.jpg';
 import img13 from '../../../../assets/Img-slider13.jpg';
+import img14 from '../../../../assets/Img-slider14.jpg';
 import img15 from '../../../../assets/Img-slider15.jpg';
 
 
@@ -54,7 +56,7 @@ function MenuSlider() {
             </div>
             <div className={cx('slide')}>
                 <img className={cx('img')} src={img2} alt=""></img>
-                <img className={cx('imgcon')} src={img11} alt=""></img>
+                <img className={cx('imgcon')} src={img12} alt=""></img>
             </div>
             <div className={cx('slide')}>
                 <img className={cx('img')} src={img3} alt=""></img>
@@ -62,7 +64,7 @@ function MenuSlider() {
             </div>
             <div className={cx('slide')}>
                 <img className={cx('img')} src={img4} alt=""></img>
-                <img className={cx('imgcon')} src={img11} alt=""></img>
+                <img className={cx('imgcon')} src={img14} alt=""></img>
             </div>
             <div className={cx('slide')}>
                 <img className={cx('img')} src={img5} alt=""></img>
