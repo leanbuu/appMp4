@@ -17,6 +17,45 @@ function MenuMalbum() {
             <Malbum img={img2} title={'Pop Ballad Việt Nổi Bật'}></Malbum>
             <Malbum img={img3} title={'Xmas List'}></Malbum>
             <Malbum img={img4} title={'Nhẹ Nhàng Cùng V-Pop'}></Malbum>
+            <Malbum img={img4} title={'Nhẹ Nhàng Cùng V-Pop'}></Malbum>
+            <Malbum img={img4} title={'Nhẹ Nhàng Cùng V-Pop'}></Malbum>
+            <Malbum img={img1} title={'Nhạc Cho Chủ Nhật'}></Malbum>
+            <Malbum img={img2} title={'Pop Ballad Việt Nổi Bật'}></Malbum>
+            <Malbum img={img3} title={'Xmas List'}></Malbum>
+            <Malbum img={img4} title={'Nhẹ Nhàng Cùng V-Pop'}></Malbum>
+            <Malbum img={img4} title={'Nhẹ Nhàng Cùng V-Pop'}></Malbum>
+            <Malbum img={img4} title={'Nhẹ Nhàng Cùng V-Pop'}></Malbum>
+            <Malbum img={img1} title={'Nhạc Cho Chủ Nhật'}></Malbum>
+            <Malbum img={img2} title={'Pop Ballad Việt Nổi Bật'}></Malbum>
+            <Malbum img={img3} title={'Xmas List'}></Malbum>
+            <Malbum img={img4} title={'Nhẹ Nhàng Cùng V-Pop'}></Malbum>
+            <Malbum img={img4} title={'Nhẹ Nhàng Cùng V-Pop'}></Malbum>
+            <Malbum img={img4} title={'Nhẹ Nhàng Cùng V-Pop'}></Malbum>
+            <Malbum img={img1} title={'Nhạc Cho Chủ Nhật'}></Malbum>
+            <Malbum img={img2} title={'Pop Ballad Việt Nổi Bật'}></Malbum>
+            <Malbum img={img3} title={'Xmas List'}></Malbum>
+            <Malbum img={img4} title={'Nhẹ Nhàng Cùng V-Pop'}></Malbum>
+            <Malbum img={img4} title={'Nhẹ Nhàng Cùng V-Pop'}></Malbum>
+            <Malbum img={img4} title={'Nhẹ Nhàng Cùng V-Pop'}></Malbum>
+            <Malbum img={img1} title={'Nhạc Cho Chủ Nhật'}></Malbum>
+            <Malbum img={img2} title={'Pop Ballad Việt Nổi Bật'}></Malbum>
+            <Malbum img={img3} title={'Xmas List'}></Malbum>
+            <Malbum img={img4} title={'Nhẹ Nhàng Cùng V-Pop'}></Malbum>
+            <Malbum img={img4} title={'Nhẹ Nhàng Cùng V-Pop'}></Malbum>
+            <Malbum img={img4} title={'Nhẹ Nhàng Cùng V-Pop'}></Malbum>
+            <Malbum img={img1} title={'Nhạc Cho Chủ Nhật'}></Malbum>
+            <Malbum img={img2} title={'Pop Ballad Việt Nổi Bật'}></Malbum>
+            <Malbum img={img3} title={'Xmas List'}></Malbum>
+            <Malbum img={img4} title={'Nhẹ Nhàng Cùng V-Pop'}></Malbum>
+            <Malbum img={img4} title={'Nhẹ Nhàng Cùng V-Pop'}></Malbum>
+            <Malbum img={img4} title={'Nhẹ Nhàng Cùng V-Pop'}></Malbum>
+            <Malbum img={img1} title={'Nhạc Cho Chủ Nhật'}></Malbum>
+            <Malbum img={img2} title={'Pop Ballad Việt Nổi Bật'}></Malbum>
+            <Malbum img={img3} title={'Xmas List'}></Malbum>
+            <Malbum img={img4} title={'Nhẹ Nhàng Cùng V-Pop'}></Malbum>
+            <Malbum img={img4} title={'Nhẹ Nhàng Cùng V-Pop'}></Malbum>
+            <Malbum img={img4} title={'Nhẹ Nhàng Cùng V-Pop'}></Malbum>
+            
         </div>
      );
 }

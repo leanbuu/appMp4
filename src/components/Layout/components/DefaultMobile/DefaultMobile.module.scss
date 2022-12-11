@@ -5,9 +5,17 @@
     font-weight: 400;
     background-color: #fcfcfc;
     min-height: 100vh;
-    overflow: auto;
+    overflow-y: scroll;
+}
+.scrollbar {
+    width: 6px;
+    height: 56px;
 }
 
+.wrappermobi ::-webkit-scrollbar {
+    width: 6px;
+
+}
 .containermobi{
     position: relative;
     height: 60px;

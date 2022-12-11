@@ -39,7 +39,7 @@ function MenuSlider() {
                 zIndex: '1000',
               }}
             >
-              <ul style={{width: '100%', height: '6px', margin: "0px", padding:'0'}}>{dots}</ul>
+              <ul style={{width: '100%', height: '6px', margin: "0px", padding:'0',zIndex: '80' }}>{dots}</ul>
             </div>
           ),
          
@@ -72,7 +72,6 @@ function MenuSlider() {
             </div>
        </Slider>
         </div>
-       
         </>
      );
 }

@@ -7,7 +7,7 @@
     flex-wrap: wrap;
     align-items: center;
     top: 0px;
-    z-index: 100;
+    z-index: 8000;
 }
 .btnheader{
     border-color: transparent !important;
@@ -82,7 +82,7 @@
     position: fixed;
     width: calc(100vw - 50px);
     height: 100%;
-    z-index: 2000;
+    z-index: 10000;
     left: -100%;
     transition:   0.5s all;
     &.active{
@@ -107,6 +107,7 @@
     background-color: #f7f7f7;
     padding: 16px 20px;
     display: flex;
+    z-index: 10000;
 }
 .card-info{
     position: relative;
@@ -165,6 +166,7 @@
     position: absolute;
     top: 9px;
     right: 8px;
+    z-index: 10000;
 }
 .menu-content{
     position: fixed;
