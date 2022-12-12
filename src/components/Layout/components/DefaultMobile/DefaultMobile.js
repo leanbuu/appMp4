@@ -7,7 +7,9 @@ import MenuInner from "../MenuInner/MenuInner";
 import MenuSlider from "../MenuSlider";
 import Imgvip from '../../../../assets/Img-vip.png';
 import MenuMalbum from "../MenuMalbum";
-
+import ListMsong from "../ListMsong";
+import LinkOpen from "../LinkOpen";
+import MenuMalbum2 from "../MenuMalbum2";
 
 const cx = classNames.bind(styles);
 const INNER = [
@@ -40,8 +42,18 @@ function DefaultLayout() {
                     <div className={cx('nhapcode')}>Hoặc nhập code VIP</div>
                         <div style={{marginTop: '20px'}}>
                             <div className={cx('contair')}>
-                                <div>CUỐI TUẦN THƯ THẢ</div>
+                                <div style={{fontSize: '18px'}}>CUỐI TUẦN THƯ THẢ</div>
                                 <MenuMalbum></MenuMalbum>
+                            </div>
+                            <div className={cx('contair')}>
+                                <div style={{fontSize: '18px', marginBottom: '5px'}}>BÀI HÁT MỚI</div>
+                                <ListMsong></ListMsong>
+                            </div>
+                        </div>
+                        <div style={{marginTop: '20px'}}>
+                            <div className={cx('contair')}>
+                                <div style={{fontSize: '18px'}}>ALBUM HOT</div>
+                                <MenuMalbum2></MenuMalbum2>
                             </div>
                         </div>
                     </div>
@@ -49,6 +61,29 @@ function DefaultLayout() {
                         <img className={cx('img')} src={icon} alt=''></img>
                         <span className={cx('title')}>Trải nghiệm Zing MP3 tốt nhất trên app</span>
                     </div>
+                    <div className={cx('footer')}>
+                    <div className={cx('contair-footer')}>
+                        <div className={cx('info-footer')}>
+                            <div className={cx('row')}>
+                                <div className={cx('title1')}>
+                                    <img style={{width: '40px', height: '40px'}} src={icon} alt=''></img>
+                                    <div className={cx('info-tacgia')}>Một sản phẩm của An</div>
+                                </div>
+                                <div className={cx('nav-footer')}>
+                                <LinkOpen name={'Giới Thiệu'}></LinkOpen>
+                                 <div className={cx('z-link')}>•</div>
+                                 <LinkOpen name={'Liên Hệ'}></LinkOpen>
+                                 <div className={cx('z-link')}>•</div>
+                                 <LinkOpen name={'Quảng Cáo'}></LinkOpen>
+                                 <br></br>
+                                 <LinkOpen name={'Góp Ý'}></LinkOpen>
+                                 <div className={cx('z-link')}>•</div>
+                                 <LinkOpen name={'Thỏa Thuận Sử Dụng'}></LinkOpen>
+                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 </div>
             </div>
      );
