@@ -10,6 +10,7 @@ import MenuMalbum from "../MenuMalbum";
 import ListMsong from "../ListMsong";
 import LinkOpen from "../LinkOpen";
 import MenuMalbum2 from "../MenuMalbum2";
+import ListMovie from '../ListMovie'
 
 const cx = classNames.bind(styles);
 const INNER = [
@@ -42,11 +43,11 @@ function DefaultLayout() {
                     <div className={cx('nhapcode')}>Hoặc nhập code VIP</div>
                         <div style={{marginTop: '20px'}}>
                             <div className={cx('contair')}>
-                                <div style={{fontSize: '18px'}}>CUỐI TUẦN THƯ THẢ</div>
+                                <div style={{fontSize: '18px', fontWeight:'700'}}>CUỐI TUẦN THƯ THẢ</div>
                                 <MenuMalbum></MenuMalbum>
                             </div>
                             <div className={cx('contair')}>
-                                <div style={{fontSize: '18px', marginBottom: '5px'}}>BÀI HÁT MỚI</div>
+                                <div style={{fontSize: '18px', marginBottom: '5px', fontWeight:'700'}}>BÀI HÁT MỚI</div>
                                 <ListMsong></ListMsong>
                             </div>
                         </div>
@@ -54,6 +55,12 @@ function DefaultLayout() {
                             <div className={cx('contair')}>
                                 <div style={{fontSize: '18px'}}>ALBUM HOT</div>
                                 <MenuMalbum2></MenuMalbum2>
+                            </div>
+                        </div>
+                        <div style={{marginTop: '20px'}}>
+                            <div className={cx('contair')}>
+                                <div style={{fontSize: '18px', fontWeight:'700'}}>MV HOT</div>
+                                <ListMovie></ListMovie>
                             </div>
                         </div>
                     </div>
