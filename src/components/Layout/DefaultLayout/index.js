@@ -10,6 +10,9 @@ import DefaultMobile from "../components/DefaultMobile";
 import MenuMedia from "../components/MenuMedia";
 import List from "../components/List";
 
+import ListSlider from "../components/ListSlider";
+
+
 
 
 const cx = classNames.bind(styles);
@@ -60,9 +63,14 @@ function DefaultLayout({ children }) {
             widthEle > 1024 ?
             <div className={cx('wrapper')}>
                 <Sidebar />
+               
                 <div className={cx('container')}>
                     <Header />
                     <div className={cx('content')}>
+                    <div className={cx('slider')}>
+                       <ListSlider />
+                    </div>
+                    <div className={cx('title')}>Mới Phát Hành</div>
                     <MenuSelect items={SELECT}></MenuSelect>
                     <MenuMedia />
                     <div className={cx('playlist')}>
@@ -77,6 +85,7 @@ function DefaultLayout({ children }) {
                     <div className={cx('thumb-ver')}></div>
             
                 </div>
+                
             </div>
             : <DefaultMobile />
         }
