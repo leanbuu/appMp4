@@ -9,7 +9,7 @@ import { useEffect, useState } from "react";
 import DefaultMobile from "../components/DefaultMobile";
 import MenuMedia from "../components/MenuMedia";
 import List from "../components/List";
-
+import ListNgheSi from "../components/ListNgheSi";
 import ListSlider from "../components/ListSlider";
 
 
@@ -70,9 +70,11 @@ function DefaultLayout({ children }) {
                     <div className={cx('slider')}>
                        <ListSlider />
                     </div>
-                    <div className={cx('title')}>Mới Phát Hành</div>
+                    <div style={{marginBottom: '20px'}} className={cx('title')}>Mới Phát Hành</div>
                     <MenuSelect items={SELECT}></MenuSelect>
                     <MenuMedia />
+                    <div className={cx('title')}>Nghệ Sĩ Đang Được Yêu Thích</div>
+                    <ListNgheSi />
                     <div className={cx('playlist')}>
                         <List props={'Có Thể Bạn Muốn Nghe'} />
                         <div style={{marginTop: '48px'}}>
