@@ -13,11 +13,11 @@ const cx = classNames.bind(styles);
 function MenuNgheSi() {
     return ( 
         <div className={cx('carousel')}>
-           <NgheSi img={img1} title={'Ú òa cùng những ca khúc nổi bật nhất của MONO'}/>
-           <NgheSi img={img2} title={'Ở đây có Hà Nhi và bộ sưu tập Hit về người yêu cũ'}/>
-           <NgheSi img={img3} title={'Hoàng Thùy Linh và những bản Hit quốc dân như...'}/>
-           <NgheSi img={img4} title={'Không được "Ngủ Quên" với Hit cực cháy của...'}/>
-           <NgheSi img={img5} title={'Đóng băng với "Hơn em chỗ nào" và những bản...'}/>
+           <NgheSi img={img1} sub={'Ú òa cùng những ca khúc nổi bật nhất của MONO'}/>
+           <NgheSi img={img2} sub={'Ở đây có Hà Nhi và bộ sưu tập Hit về người yêu cũ'}/>
+           <NgheSi img={img3} sub={'Hoàng Thùy Linh và những bản Hit quốc dân như...'}/>
+           <NgheSi img={img4} sub={'Không được "Ngủ Quên" với Hit cực cháy của...'}/>
+           <NgheSi img={img5} sub={'Đóng băng với "Hơn em chỗ nào" và những bản...'}/>
         </div>
      );
 }

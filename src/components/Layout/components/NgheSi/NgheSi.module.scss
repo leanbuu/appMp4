@@ -38,11 +38,23 @@
    
 }
 .title{
-    text-transform: none;
+    font-size: 14px;
+    font-weight: 700;
+    &:hover{
+        color: #c273ed;
+        cursor: pointer;
+    }
+}
+.sub{
     font-size: 14px;
     font-weight: 400;
     margin-top: 0;
     display: block;
     cursor: pointer;
     color: hsl(0deg 0% 100% / 50%);
+    &:hover{
+        color: #c273ed;
+        cursor: pointer;
+        text-decoration:underline;
+    }
 }
