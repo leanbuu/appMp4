@@ -13,6 +13,8 @@ import ListNgheSi from "../components/ListNgheSi";
 import ListSlider from "../components/ListSlider";
 import MenuNgheSi from "../components/MenuNgheSi";
 import MenuBest from "../components/MenuBest";
+import Footer from "../components/Footer";
+import ListSliderCasi from "../components/ListSliderCasi";
 
 
 
@@ -83,13 +85,14 @@ function DefaultLayout({ children }) {
                         <div style={{marginTop: '48px'}}>
                             <List props={'Nhạc Mới Mỗi Ngày'} />
                         </div>
+                        <div className={cx('slidercasi')}>
+                       <ListSliderCasi />
+                        </div>
+                        <Footer />
                     </div>
                     </div>
                 </div>
-                <div className={cx('thumb')}>
-                    <div className={cx('thumb-ver')}></div>
-            
-                </div>
+                
                 
             </div>
             : <DefaultMobile />

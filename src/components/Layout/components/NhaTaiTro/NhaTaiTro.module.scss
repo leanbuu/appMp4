@@ -1,0 +1,31 @@
+.pr{
+    height: 56.1px;
+    position: relative;
+    width: calc(12.5% - 20px);
+    margin-bottom: 30px;
+    padding: 0 10px;
+}
+.content{
+    padding-bottom: 56.25% !important ;
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.figure{
+    background-color: #f7f7f7;
+    line-height: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0px;
+}
+.img{
+    max-width: 90%;
+    max-height: 80%;
+    width: auto;
+}
