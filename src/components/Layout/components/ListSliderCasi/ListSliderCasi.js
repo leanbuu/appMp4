@@ -32,7 +32,7 @@ function ListSliderCasi() {
     slidesToScroll: 5,
 
     autoplay: true,
-    autoplaySpeed: 30000000,
+    autoplaySpeed: 3500,
      // eslint-disable-next-line
     speed: 500,
     swipe: false,

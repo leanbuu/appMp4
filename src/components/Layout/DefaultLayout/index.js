@@ -16,7 +16,9 @@ import MenuBest from "../components/MenuBest";
 import Footer from "../components/Footer";
 import ListSliderCasi from "../components/ListSliderCasi";
 
-
+import img1 from '../../../assets/Img-nhacmoi1.webp'
+import NhacMoi from "../components/NhacMoi";
+import ListSliderNhacMoi from "../components/ListSliderNhacMoi";
 
 const cx = classNames.bind(styles);
 const SELECT = [
@@ -88,6 +90,10 @@ function DefaultLayout({ children }) {
                         <div className={cx('slidercasi')}>
                        <ListSliderCasi />
                         </div>
+                        <div style={{marginBottom: '20px'}} className={cx('title')}>Nhạc Mới</div>
+                        <div className={cx('listnhacmoi')}>
+                       <ListSliderNhacMoi />
+                         </div>
                         <Footer />
                     </div>
                     </div>
