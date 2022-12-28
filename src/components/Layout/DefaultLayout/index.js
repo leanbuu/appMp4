@@ -15,9 +15,11 @@ import MenuNgheSi from "../components/MenuNgheSi";
 import MenuBest from "../components/MenuBest";
 import Footer from "../components/Footer";
 import ListSliderCasi from "../components/ListSliderCasi";
+import SuKien from "../components/SuKien";
+import img1 from '../../../assets/Img-sukien1.webp'
+import img2 from '../../../assets/Img-sukien2.webp'
+import img3 from '../../../assets/Img-sukien3.webp'
 
-import img1 from '../../../assets/Img-nhacmoi1.webp'
-import NhacMoi from "../components/NhacMoi";
 import ListSliderNhacMoi from "../components/ListSliderNhacMoi";
 
 const cx = classNames.bind(styles);
@@ -93,6 +95,12 @@ function DefaultLayout({ children }) {
                         <div style={{marginBottom: '20px'}} className={cx('title')}>Nhạc Mới</div>
                         <div className={cx('listnhacmoi')}>
                        <ListSliderNhacMoi />
+                         </div>
+                        <div style={{marginBottom: '20px'}} className={cx('title')}>Sự Kiện</div>
+                        <div className={cx('listsukien')}>
+                        <SuKien  casi={img2} name={'Sinh Nhật Sao x Hương Giang'} date={'00:00 Thứ Năm, 29 tháng 12'}/>
+                        <SuKien  casi={img1} name={'Người Thương Em Đây Mà- Đinh...'} date={'19:00 Thứ Năm, 29 tháng 12'}/>
+                        <SuKien  casi={img3} name={'Thương Phận Đời Con Gái - Hồ Việt'} date={'19:00 Thứ Sáu, 30 tháng 12'}/>
                          </div>
                         <Footer />
                     </div>
