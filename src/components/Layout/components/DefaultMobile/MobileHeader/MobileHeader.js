@@ -80,7 +80,6 @@ function MobileHeader() {
    setActive(true);
    }
    function handleClose() {
-      
    setActive(false);
    }
 
