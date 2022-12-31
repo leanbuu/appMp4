@@ -7,28 +7,29 @@ import 'react-h5-audio-player/lib/styles.css'
 const cx = classNames.bind(styles);
 
 
-function Media({img, ten, casi, thoigian, src}) {
+function Media({data, bien}) {
    const [active, setActive] = useState(false)
    function offMusic() {
    setActive(false);
    }
    function onMusic() {
    setActive(!active);
+   
    }
     return ( 
         <>
         <div className={cx('media')}>
-         <div onClick={onMusic} className={cx('img')}><img className={cx('img-media')} src={img} alt="" ></img></div>
+         <div onClick={onMusic} className={cx('img')}><img className={cx('img-media')} src={data.img} alt="" ></img></div>
             <div className={cx('card-info')}>
-                <div className={cx('tieude')}>{ten}</div>
-                <div className={cx('casi')}>{casi}</div>
-                <div className={cx('thoigian')}>{thoigian}</div>
+                <div className={cx('tieude')}>{data.name}</div>
+                <div className={cx('casi')}>{data.casi}</div>
+                <div className={cx('thoigian')}>{data.time}</div>
             </div>
            
         </div>
         <div className={`${styles.test} ${active ?styles.active:""}`}>
            < AudioPlayer
-              src={src}
+              src={data.src}
             /> 
           </div>
          

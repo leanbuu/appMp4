@@ -7,7 +7,7 @@ import Sidebar from "./Sidebar";
 import MenuSelect from "../components/MenuSelect";
 import { useEffect, useState } from "react";
 import DefaultMobile from "../components/DefaultMobile";
-import MenuMedia from "../components/MenuMedia";
+
 import List from "../components/List";
 import ListNgheSi from "../components/ListNgheSi";
 import ListSlider from "../components/ListSlider";
@@ -21,6 +21,7 @@ import img2 from '../../../assets/Img-sukien2.webp'
 import img3 from '../../../assets/Img-sukien3.webp'
 
 import ListSliderNhacMoi from "../components/ListSliderNhacMoi";
+
 
 const cx = classNames.bind(styles);
 const SELECT = [
@@ -43,6 +44,7 @@ function detectDevice(){
     const widthEle = window.innerWidth
     return widthEle
 }
+
 
 function DefaultLayout({ children }) {
     const [widthEle, setWidthEle] = useState(0)
@@ -81,7 +83,6 @@ function DefaultLayout({ children }) {
                     <ListNgheSi props={<MenuBest />} />
                     <div style={{marginBottom: '20px'}} className={cx('title')}>Mới Phát Hành</div>
                     <MenuSelect items={SELECT}></MenuSelect>
-                    <MenuMedia />
                     <div className={cx('title')}>Nghệ Sĩ Đang Được Yêu Thích</div>
                     <ListNgheSi props={<MenuNgheSi />} />
                     <div className={cx('playlist')}>
