@@ -72,7 +72,7 @@ function DefaultLayout({ children }) {
             widthEle > 1024 ?
             <div className={cx('wrapper')}>
                 <Sidebar />
-               
+                
                 <div className={cx('container')}>
                     <Header />
                     <div className={cx('content')}>
@@ -103,6 +103,7 @@ function DefaultLayout({ children }) {
                         <SuKien  casi={img1} name={'Người Thương Em Đây Mà- Đinh...'} date={'19:00 Thứ Năm, 29 tháng 12'}/>
                         <SuKien  casi={img3} name={'Thương Phận Đời Con Gái - Hồ Việt'} date={'19:00 Thứ Sáu, 30 tháng 12'}/>
                          </div>
+                         
                         <Footer />
                     </div>
                     </div>

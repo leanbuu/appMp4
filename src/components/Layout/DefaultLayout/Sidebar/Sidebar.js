@@ -3,15 +3,7 @@ import classNames from "classnames/bind";
 import styles from '../Sidebar/Sidebar.module.scss';
 import { Link } from "react-router-dom";
 import MenuNavbar from "../../components/MenuNavbar";
-import icon1 from '../../../../assets/Icon-canhan.png'
-import icon2 from '../../../../assets/KhamPha.png'
-import icon3 from '../../../../assets/Icon-zing.png'
-import icon4 from '../../../../assets/Icon-radio.png'
-import icon5 from '../../../../assets/Icon-theodoi.png'
-import icon6 from '../../../../assets/Icon-nhacmoi.png'
-import icon7 from '../../../../assets/Icon-theloai.png'
-import icon8 from '../../../../assets/Icon-top.png'
-import icon9 from '../../../../assets/Icon-mv.png'
+import { CaNhanIcon, KhamPhaIcon, MvIcon, NhacMoiIcon, RadioIcon, TheLoaiIcon, TheoDoiIcon, TopIcon, ZingIcon } from "../../components/Icons";
 import icon10 from '../../../../assets/Icon-add.png'
 
 const cx = classNames.bind(styles);
@@ -19,47 +11,48 @@ const cx = classNames.bind(styles);
 const MENU_ITEMS = [
     {
         id: 1,
-        img: icon1,
-        title: 'Cá Nhân',    
+        icon: <CaNhanIcon />,
+        title: 'Cá Nhân', 
+        to: '/following'
     },
     {
         id: 2,
-        img: icon2,
+        icon: <KhamPhaIcon />,
         title: 'Khám Phá',    
     },
     {
         id: 3,
-        img: icon3,
+        icon: <ZingIcon />,
         title: '#zingchart',    
     },
     {
         id: 4,
-        img: icon4,
+        icon: <RadioIcon />,
         title: 'Radio',    
     },
     {
         id: 5,
-        img: icon5,
+        icon: <TheoDoiIcon />,
         title: 'Theo Dõi',    
     }, 
     {
         id: 6,
-        img: icon6,
+        icon: <NhacMoiIcon />,
         title: 'Nhạc Mới',    
     },
     {
         id: 7,
-        img: icon7,
+        icon: <TheLoaiIcon />,
         title: 'Thể Loại',    
     },
     {
         id: 8,
-        img: icon8,
+        icon: <TopIcon />,
         title: 'Top 100',    
     },
     {
         id: 9,
-        img: icon9,
+        icon: <MvIcon />,
         title: 'MV'
     }
 ]
