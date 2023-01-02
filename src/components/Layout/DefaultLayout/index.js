@@ -21,6 +21,7 @@ import img2 from '../../../assets/Img-sukien2.webp'
 import img3 from '../../../assets/Img-sukien3.webp'
 
 import ListSliderNhacMoi from "../components/ListSliderNhacMoi";
+import PlaySong from "../components/PlaySong";
 
 
 const cx = classNames.bind(styles);
@@ -106,9 +107,10 @@ function DefaultLayout({ children }) {
                          
                         <Footer />
                     </div>
+                   
                     </div>
                 </div>
-                
+                <PlaySong />
                 
             </div>
             : <DefaultMobile />
