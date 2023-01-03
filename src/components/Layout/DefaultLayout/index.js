@@ -22,21 +22,22 @@ import img3 from "../../../assets/Img-sukien3.webp";
 import ListSliderNhacMoi from "../components/ListSliderNhacMoi";
 import PlaySong from "../components/PlaySong";
 
-import { useContext } from "react";
-import Song from "../../../SongContext/Song";
 
 const cx = classNames.bind(styles);
 const SELECT = [
   {
     id: 1,
+    danhmuc: 2,
     name: "TẤT CẢ",
   },
   {
     id: 2,
+    danhmuc: 2,
     name: "VIỆT NAM",
   },
   {
     id: 3,
+    danhmuc: 3,
     name: "QUỐC TẾ",
   },
 ];
@@ -50,7 +51,7 @@ function DefaultLayout({ children }) {
   const [widthEle, setWidthEle] = useState(0);
   let resizeScreen = false;
 
-  const context = useContext(Song);
+
 
   useEffect(() => {
     setWidthEle(detectDevice());
@@ -67,9 +68,6 @@ function DefaultLayout({ children }) {
     resizeScreen = true;
   }, 1000);
 
-  const anNut = () => {
-    console.log("an nut");
-  };
 
   return (
     <>
@@ -83,7 +81,7 @@ function DefaultLayout({ children }) {
               <div className={cx("slider")}>
                 <ListSlider />
               </div>
-              <button onClick={anNut}></button>
+
               <div className={cx("title")}>Hay nhất của 2022 ⭐</div>
               <ListNgheSi props={<MenuBest />} />
               <div style={{ marginBottom: "20px" }} className={cx("title")}>

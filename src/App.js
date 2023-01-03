@@ -8,9 +8,8 @@ import { dataSong } from "./dataSong";
 
 function App() {
   const [song, setSong] = useState(dataSong[0]);
-  const [isShowMenu, setIsShowMenu] = useState(false);
+  // const [isShowMenu, setIsShowMenu] = useState(false);
   const [thu, setThu] = useState("none");
-  console.log("check menu :>>", isShowMenu);
 
   // xu ly play
   const handlePlaySong = (id) => {
@@ -32,9 +31,9 @@ function App() {
     setSong(newSong);
   };
 
-  const upDateStateMenu = (value) => {
-    setIsShowMenu(value);
-  };
+  // const upDateStateMenu = (value) => {
+  //   setIsShowMenu(value);
+  // };
 
   return (
     <Router>
@@ -59,7 +58,7 @@ function App() {
                       dataSong,
                       handlePlaySong,
                       song,
-                      upDateStateMenu,
+                      // upDateStateMenu,
                     }}
                   >
                     <Layout>

@@ -15,7 +15,7 @@ export const dataSong=[
         casi: ' AMEE, Hoàng Dũng',
         time: '4p06',
         danhmuc: 2,
-        src: 'https://stream.nixcdn.com/NhacCuaTui2028/SaoAnhChuaVeNha-AMEEHoangDungTheVoice-7983037.mp3?st=FM8Mqy-Nt_XWYC-ucJnd4Q&e=1672379004&t=1672292789387'    
+        src: 'https://stream.nixcdn.com/NhacCuaTui2028/SaoAnhChuaVeNha-AMEEHoangDungTheVoice-7983037.mp3?st=-xZ-agJ1sIqvC_lRCpNqhA&e=1672822202&t=1672735936874'    
     },
     {   
         id: 3,
@@ -46,11 +46,11 @@ export const dataSong=[
     },
     {   
         id: 6,
-        img: 'https://avatar-ex-swe.nixcdn.com/song/2021/11/19/6/d/9/2/1637317177185_500.jpg',
+        img: 'https://avatar-ex-swe.nixcdn.com/song/2021/11/19/6/d/9/1/1637317177185.jpg',
         name: 'Bước Qua Nhau',
         casi: ' Vũ',
         time: '4p17',
-        danhmuc: 0,
+        danhmuc: 2,
         src: 'https://stream.nixcdn.com/Warner_Audio86/BuocQuaNhau-Vu-7847964.mp3?st=aIczUCGXPCptmNBGvi7qpQ&e=1672381128&t=1672294844649s'    
     },
     {   
@@ -82,39 +82,39 @@ export const dataSong=[
     },
     {   
         id: 10,
-        img: 'https://i.scdn.co/image/ab6761610000e5ebc02d416c309a68b04dc94576',
-        name: 'Fade-NCS Release',
-        casi: ' Alan Walker',
-        time: '4p20',
+        img: 'https://avatar-ex-swe.nixcdn.com/song/2022/03/11/1/a/0/3/1646982960544_500.jpg',
+        name: 'Bones',
+        casi: 'Imagine Dragons',
+        time: '2p',
         danhmuc: 3,
-        src: 'https://cdn.discordapp.com/attachments/775740994595323954/775741536591806484/Alan_Walker_-_Fade_NCS_ReleaseMP3_160K.mp3'    
+        src: 'https://stream.nixcdn.com/NhacCuaTui1026/Bones-ImagineDragons-7136220.mp3?st=ONgsU9tQXdHrBZ1cBaoqxg&e=1672828815&t=1672742418013'    
     },
     {   
         id:11,
+        img: 'https://avatar-ex-swe.nixcdn.com/song/2018/11/07/6/0/0/d/1541557219292_500.jpg',
+        name: 'Bad Liar',
+        casi: ' Imagine Dragons',
+        time: '4p21',
+        danhmuc: 3,
+        src: 'https://stream.nixcdn.com/Unv_Audio120/BadLiar-ImagineDragons-5739340.mp3?st=SxbnGAjh51FSlCIo2U6vlA&e=1672828911&t=1672742514835'    
+    },
+    {   
+        id:12,
         img: 'https://i.scdn.co/image/ab6761610000e5ebc02d416c309a68b04dc94576',
         name: 'Fade-NCS Release',
-        casi: ' Alan Walker',
+        casi: ' Alan Walkerdsd',
         time: '4p20',
         danhmuc: 3,
         src: 'https://cdn.discordapp.com/attachments/775740994595323954/775741536591806484/Alan_Walker_-_Fade_NCS_ReleaseMP3_160K.mp3'    
     },
     {   
-        id:11,
-        img: 'https://i.scdn.co/image/ab6761610000e5ebc02d416c309a68b04dc94576',
-        name: 'Fade-NCS Release',
-        casi: ' Alan Walker',
-        time: '4p20',
-        danhmuc: 3,
-        src: 'https://cdn.discordapp.com/attachments/775740994595323954/775741536591806484/Alan_Walker_-_Fade_NCS_ReleaseMP3_160K.mp3'    
-    },
-    {   
-        id: 12,
-        img: 'https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_webp/covers/c/b/cb61528885ea3cdcd9bdb9dfbab067b1_1504988884.jpg',
-        name: 'Nơi Này Có Anh',
-        casi: ' Sơn Tùng M-TP',
+        id: 13,
+        img: 'https://photo-resize-zmp3.zmdcdn.me/w94_r1x1_jpeg/cover/0/b/e/3/0be34b7ba82cf95049cde24bce0359c6.jpg?fs=MTY2NDE2MTUyMTI4OHx3ZWJWNHwxMTYdUngOTgdUngMy45Mw',
+        name: 'The Truth Untold',
+        casi: ' BTS',
         time: '4p17',
-        danhmuc: 2,
-        src: 'https://vnno-vn-6-tf-mp3-s1-zmp3.zmdcdn.me/6ba5b39c69d88086d9c9/7989963554048552934?authen=exp=1672633176~acl=/6ba5b39c69d88086d9c9/*~hmac=30a7d18ff6223099d18d9b895bce63e6&fs=MTY3MjQ2MDM3NjY2MHx3ZWJWNnwxMDA1MTmUsIC3ODY5fDE3MS4yMzQdUngMTIdUngOTU'    
+        danhmuc: 3,
+        src: 'https://cdn.discordapp.com/attachments/775740994595323954/775741533789224960/Alan_Walker_-_Sing_Me_To_SleepMP3_160K.mp3'    
     },
     {   
         id: 13,

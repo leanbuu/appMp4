@@ -67,6 +67,17 @@
 .rplay{
     display: flex;
     width: 398px;
-    margin-left: 20px;
+    height: 36px;
+    justify-content: flex-end;
     cursor: pointer;
+}
+.divide{
+    width: 41px;
+    height: 33px;
+    width: 1px;
+    background-color: hsl(0deg 0% 100% / 10%);
+    margin: 0 20px;
+}
+.imgr{
+    border-radius: 4px;
 }

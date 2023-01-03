@@ -1,5 +1,4 @@
 .media{
-   
     width: 278px;
     height: 60px;
     align-items: center;
@@ -7,9 +6,13 @@
     text-align: left;
     padding: 10px;
     border-radius: 5px;
+    
     &:hover{
         background-color: #2f2739;
     }
+    &.active{
+        background-color: #2f2739;
+}
 }
 
 .img{
@@ -66,7 +69,4 @@
 }
 .test{
     display: none;
-}
-.active{
-    display: block;
 }

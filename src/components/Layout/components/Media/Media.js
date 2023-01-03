@@ -1,19 +1,18 @@
 import classNames from "classnames/bind";
 import styles from "../Media/Media.module.scss";
-import AudioPlayer from "react-h5-audio-player";
-import { useContext, useState } from "react";
+
+import { useContext} from "react";
 import "react-h5-audio-player/lib/styles.css";
-import { dataSong } from "../../../../dataSong";
-import { useLocation, useNavigate } from "react-router-dom";
 import Song from "../../../../SongContext/Song";
 
 const cx = classNames.bind(styles);
 
-function Media({ data, bien }) {
+function Media({ data, bien}) {
+  let active = bien;
   const songContext = useContext(Song);
-  const { handlePlaySong, song, dataSong } = songContext;
-
-  const [active, setActive] = useState(false);
+  const { handlePlaySong } = songContext;
+ 
+  
 
   // const { upDateStateMenu } = useContext(Song);
 //   const location = useLocation();
@@ -22,7 +21,7 @@ function Media({ data, bien }) {
 
   return (
     <>
-      <div onClick={() => handlePlaySong(data.id)} className={cx("media")}>
+      <div onClick={() => handlePlaySong(data.id)} className={`${styles.media} ${data?.id === active ?styles.active:""}`}>
         <div className={cx("img")}>
           <img className={cx("img-media")} src={data.img} alt=""></img>
         </div>
@@ -32,8 +31,10 @@ function Media({ data, bien }) {
           <div className={cx("thoigian")}>{data.time}</div>
         </div>
       </div>
-      <div className={`${styles.test} ${active ? styles.active : ""}`}>
-        <AudioPlayer src={data.src} />
+    
+
+      <div >
+       
       </div>
     </>
   );

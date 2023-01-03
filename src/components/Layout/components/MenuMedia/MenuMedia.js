@@ -1,18 +1,26 @@
 import classNames from "classnames/bind";
 import styles from '../MenuMedia/MenuMedia.module.scss';
 import Media from "../Media";
+import { useContext } from "react";
+import Song from "../../../../SongContext/Song";
 
 const cx = classNames.bind(styles);
 
 function MenuMedia( {items =[], isActive }) {
+
+    const { song } = useContext(Song);
     const renderItems = () => {
-        return items.map((item, index) => (
+        let arrFilter = isActive > 1 ? items.filter(item => {
+            return item.danhmuc === isActive
+        }) : items
+        return arrFilter.map((item, index) => (
             <>
             { 
-            isActive === item.danhmuc && <div className={cx('boc')}>
-                    <Media key={item.id} data={item}/> 
-            </div>
-            }
+              <div className={cx('boc')}>
+                    <Media key={item.id} data={item} bien={song.id}/> 
+            </div>  
+            } 
+            
             </>
         ))
     }

@@ -83,7 +83,7 @@ function MobileHeader() {
    setActive(false);
    }
 
-   console.log(active)
+
     return ( 
       <div>
         <div className={`${styles.navi} ${active ?styles.active:""}`}>

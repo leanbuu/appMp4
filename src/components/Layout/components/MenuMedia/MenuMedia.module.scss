@@ -1,9 +1,9 @@
 .menu-media{
     display: grid;
     grid-template-columns: 346px 346px 346px;
-    grid-template-rows: 145px 145px 145px 145px;
+    grid-template-rows: 80px 80px 80px 80px;
     width: 1038px;
-    height: auto;
+    height: 320px;
     overflow: hidden;
     margin: 0 -15px;
 
@@ -12,4 +12,6 @@
     width: 318px;
     height: 80px;
     padding: 0px 14px;
+    color: aliceblue;
+    font-size: 16px;
 }
