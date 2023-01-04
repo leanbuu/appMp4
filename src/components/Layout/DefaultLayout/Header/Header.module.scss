@@ -10,9 +10,11 @@
     z-index: 99;
     min-width: 660px;
     transition: right .4s;
-    background-color: var(--layout-bg);
     box-shadow: 0 3px 5px rgb(0 0 0 / 10%);
     z-index: 100000;
+    backdrop-filter: blur(50px);
+    background-color: rgba(23,15,35,0.8);
+    
 }
 
 .menu-item{

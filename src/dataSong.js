@@ -117,16 +117,16 @@ export const dataSong=[
         src: 'https://cdn.discordapp.com/attachments/775740994595323954/775741533789224960/Alan_Walker_-_Sing_Me_To_SleepMP3_160K.mp3'    
     },
     {   
-        id: 13,
+        id: 14,
         img: 'https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_webp/cover/a/6/8/b/a68b0bd411adc076ba6c3fb00203a1ee.jpg',
         name: 'Chạy Ngay Đi',
         casi: ' Sơn Tùng M-TP',
         time: '4p08',
         danhmuc: 2,
-        src: 'https://stream.nixcdn.com/NhacCuaTui964/ChayNgayDi-SonTungMTP-5468704.mp3?st=dZMeHky9rRMccQhNDsMZNg&e=1672721934&t=1672635726155'    
+        src: 'https://stream.nixcdn.com/NhacCuaTui964/ChayNgayDi-SonTungMTP-5468704.mp3?st=BNFd6x48hKMTFRvXfZV0LQ&e=1672931496&t=1672845323480'    
     },
     {   
-        id: 14,
+        id: 15,
         img: 'https://avatar-ex-swe.nixcdn.com/song/2019/11/10/0/0/f/f/1573396097296_500.jpg',
         name: 'Vì yêu cứ đâm đầu',
         casi: ' MIN, ĐEN, JustaTee',

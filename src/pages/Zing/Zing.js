@@ -1,6 +1,14 @@
+
+import classNames from "classnames/bind";
+import styles from '../Zing/Zing.module.scss';
+
+const cx = classNames.bind(styles);
+
 function Zing() {
     return ( 
-        <h2>Zing</h2>
+        <div>
+            <div className={cx('bg')}></div>
+        </div>
      );
 }
 
