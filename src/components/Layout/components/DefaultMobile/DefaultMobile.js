@@ -3,14 +3,22 @@ import classNames from "classnames/bind";
 import styles from '../DefaultMobile/DefaultMobile.module.scss'
 import MobileHeader from "./MobileHeader";
 import icon from '../../../../assets/Icon-widget.png';
+
 import MenuInner from "../MenuInner/MenuInner";
 import MenuSlider from "../MenuSlider";
 import Imgvip from '../../../../assets/Img-vip.png';
 import MenuMalbum from "../MenuMalbum";
-import ListMsong from "../ListMsong";
-import LinkOpen from "../LinkOpen";
+import ListMsong from "./ListMsong";
+import { dataSong } from "../../../../dataSong";
+import AudioPlayer from "react-h5-audio-player";
+import { BsFillPlayFill, BsPause, BsPauseFill } from "react-icons/bs";
+import "react-h5-audio-player/lib/styles.css"; 
 import MenuMalbum2 from "../MenuMalbum2";
 import ListMovie from '../ListMovie'
+import MobilePlaySong from "./MobilePlaySong";
+import FooterMobile from "./FooterMobie";
+import Song from "../../../../SongContext/Song";
+import { useContext, useState} from "react";
 
 const cx = classNames.bind(styles);
 const INNER = [
@@ -29,17 +37,30 @@ const INNER = [
  ]
 
 function DefaultLayout() {
+   const [active, setActive] = useState(false)
+   function handleShow() {
+   setActive(true);
+   }
+   function handleClose() {
+   setActive(false);
+   }
 
+   const {song, dong , mo } = useContext(Song);
     return ( 
-        <div className={cx('wrappermobi')}>
+        <div  className={cx('wrappermobi')}>
                 <div className={cx('containermobi')}>
                     <MobileHeader />
+                    <div style={{display : `${mo}` }} className={`${styles.shownhac} ${active ?styles.active:""}`} >
+                    <MobilePlaySong />
+                    </div>
+                    <div style={{display : `${dong}` }} className={`${styles.nghenhac} ${active ?styles.active:""}`}>    
                     <MenuInner items={INNER}></MenuInner>
                     <div className={cx('contentmobi')}>
                     <MenuSlider></MenuSlider>
-                    <div className={cx('banner-vip')}>
+                  <div className={cx('banner-vip')}>
                        <img className={cx('imgvip')} src={Imgvip} alt=''></img>
                     </div>
+                     
                     <div className={cx('nhapcode')}>Hoặc nhập code VIP</div>
                         <div style={{marginTop: '20px'}}>
                             <div className={cx('contair')}>
@@ -48,9 +69,10 @@ function DefaultLayout() {
                             </div>
                             <div className={cx('contair')}>
                                 <div style={{fontSize: '18px', marginBottom: '5px', fontWeight:'700'}}>BÀI HÁT MỚI</div>
-                                <ListMsong></ListMsong>
+                                <ListMsong items={dataSong}></ListMsong>
                             </div>
                         </div>
+                       
                         <div style={{marginTop: '20px'}}>
                             <div className={cx('contair')}>
                                 <div style={{fontSize: '18px'}}>ALBUM HOT</div>
@@ -63,33 +85,30 @@ function DefaultLayout() {
                                 <ListMovie></ListMovie>
                             </div>
                         </div>
+                       
                     </div>
+                    {/* <div className={cx('backplay')}>
+                        <img className={cx('backimg')} src={song.img}></img>
+                        <div className={cx('backname')}><span>{song.name}</span></div>
+                        <div className={cx('backsrc')}>
+                        <AudioPlayer 
+                        src={song.src}
+                        showSkipControls={false}
+                        showJumpControls={false}
+                        autoPlay={false}
+                        showDownloadProgress={false}
+                        showFilledProgress={false}
+                        hasDefaultKeyBindings={false}
+                        customVolumeControls={[]}
+                        customAdditionalControls={[]} />
+                         
+                        </div>
+                    </div> */}
                     <div className={cx('widget')}>
                         <img className={cx('img')} src={icon} alt=''></img>
                         <span className={cx('title')}>Trải nghiệm Zing MP3 tốt nhất trên app</span>
                     </div>
-                    <div className={cx('footer')}>
-                    <div className={cx('contair-footer')}>
-                        <div className={cx('info-footer')}>
-                            <div className={cx('row')}>
-                                <div className={cx('title1')}>
-                                    <img style={{width: '40px', height: '40px'}} src={icon} alt=''></img>
-                                    <div className={cx('info-tacgia')}>Một sản phẩm của An</div>
-                                </div>
-                                <div className={cx('nav-footer')}>
-                                <LinkOpen name={'Giới Thiệu'}></LinkOpen>
-                                 <div className={cx('z-link')}>•</div>
-                                 <LinkOpen name={'Liên Hệ'}></LinkOpen>
-                                 <div className={cx('z-link')}>•</div>
-                                 <LinkOpen name={'Quảng Cáo'}></LinkOpen>
-                                 <br></br>
-                                 <LinkOpen name={'Góp Ý'}></LinkOpen>
-                                 <div className={cx('z-link')}>•</div>
-                                 <LinkOpen name={'Thỏa Thuận Sử Dụng'}></LinkOpen>
-                                 </div>
-                            </div>
-                        </div>
-                    </div>
+                   <FooterMobile /> 
                 </div>
                 </div>
             </div>

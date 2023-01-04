@@ -64,6 +64,7 @@
 }
 .widget{
     background-image: linear-gradient(-90deg,#4d4ea0,#efadb1);
+    border: solid 0px transparent;
     border-radius: 30px;
     bottom: 10px;
     color: #fff;
@@ -75,6 +76,40 @@
     text-align: center;
     width: 90%;
     z-index: 10;
+}
+.backplay{
+    background-color: #32323d;
+    border: solid 0px transparent;
+    border-radius: 30px;
+    bottom: 70px;
+    color: #fff;
+    font-size: 14px;
+    height: 70px;
+    left: 2%;
+    line-height: 50px;
+    position: fixed;
+    text-align: center;
+    width: 96%;
+    z-index: 10;
+    display: flex;
+}
+.backimg{
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 20px;
+}
+.backname{
+    width: 78.13px;
+    height: 70px;
+    word-wrap: break-word;
+}
+.backsrc{
+    width: 280px;
+    height: 20px;
+    position: relative;
+    margin-bottom: 200px;
 }
 .img{
     display: inline-block;
@@ -155,4 +190,98 @@
     font-size: 22px;
     color: #d8d8d8;
     margin: 0 7px;
+}
+.nghenhac{
+    width: 100%;
+    &.active{
+        display: block;
+     }
+}
+.shownhac{
+    width: 100%;
+    &.active{
+        display: none;
+        transition:   0.5s all;
+     }
+}
+.playsong{
+    overflow: hidden;
+    padding-top: 52px;
+}
+.song{
+    position: relative;
+    background-color: #000;
+    overflow: hidden;
+    padding: 0;
+}
+.nenanh{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    filter: blur(15px);
+    background: center center/cover no-repeat;
+}
+.info{
+    padding: 20px 16px;
+    width: auto;
+    height: 100px;
+    position: relative;
+    background-color: rgba(0,0,0,.65);
+}
+.imgsong{
+    float: left;
+    position: relative;
+    width : 100px;
+    height: 100px;
+    border-radius: 4px;
+}
+.infosong{
+    position: relative;
+    margin-left: 115px;
+    color: #fcfcfc;
+}
+.namesong{
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0;
+}
+.casisong{
+    color: rgb(160, 160, 160);
+}
+.time{
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+.player{
+    margin-top: 5px;
+    background-color: rgb(40 17 102 / 10%) !important;
+    padding-bottom: 5px;
+
+&.button.rhap_button-clear{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    border-radius: 25px;
+    margin: 0 20px;
+    width: 50px;
+    height: 50px;
+    /* animation: spin 4s infinite; */
+  }
+} 
+.btnback{
+    margin-top: 40px;
+    border-radius: 35px;
+    position: relative;
+    left: 30%;
+    width: 40%;
+    height: 50px;
+    background-color: #65509e;
+    color: #dbdbdb;
+    border: solid 1px #32323d;
+    font-size: 17px;
+    font-weight: 700;
 }

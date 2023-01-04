@@ -15,7 +15,7 @@ export const dataSong=[
         casi: ' AMEE, Hoàng Dũng',
         time: '4p06',
         danhmuc: 2,
-        src: 'https://stream.nixcdn.com/NhacCuaTui2028/SaoAnhChuaVeNha-AMEEHoangDungTheVoice-7983037.mp3?st=-xZ-agJ1sIqvC_lRCpNqhA&e=1672822202&t=1672735936874'    
+        src: 'https://stream.nixcdn.com/NhacCuaTui2028/SaoAnhChuaVeNha-AMEEHoangDungTheVoice-7983037.mp3?st=-zKFvbGqgWey_i-lsmaqMA&e=1672886355&t=1672799989230'    
     },
     {   
         id: 3,

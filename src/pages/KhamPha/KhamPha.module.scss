@@ -1,0 +1,42 @@
+.slider{
+    position: relative;
+    max-width: 1008px;
+    padding-top: 32px;
+    margin: 0 -15px 20px ;
+}
+.title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    color: #fff;
+    margin-top: 48px;
+    margin-bottom: 20px;
+    font-weight: 700;
+}  
+
+.playlist{
+    width: 1008px;
+    height: 302px;
+    margin-top: 48px;
+}
+
+.slidercasi{
+    margin-top: 48px;
+    margin-bottom: 48px;
+    position: relative;
+    width: 100%;
+}
+.listnhacmoi{
+    padding: 3px 0 5px;
+    margin: 0 -15px;
+    width: 1038px;
+    position: relative;
+}
+.listsukien{
+    display: flex;
+    margin: 0 -15px;
+    overflow: hidden;
+    width: 1038px;
+    position: relative;
+}

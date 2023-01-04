@@ -3,20 +3,21 @@ import DefaultLayout from "./components/Layout/DefaultLayout";
 import { publicRoutes } from "./routes";
 import { Fragment, useState } from "react";
 import Song from "./SongContext/Song";
-
 import { dataSong } from "./dataSong";
 
 function App() {
   const [song, setSong] = useState(dataSong[0]);
   // const [isShowMenu, setIsShowMenu] = useState(false);
-  const [thu, setThu] = useState("none");
+  const [mo, setMo] = useState("none");
+  const [dong, setDong] = useState('block');
 
   // xu ly play
   const handlePlaySong = (id) => {
-    // console.log("vo handle play");
-    // console.log(id);
-    setThu("block");
-    // console.log(thu);
+    setDong(dong === 'block' ? "none" : 'block');
+    setMo(mo === "none" ? 'block' : "none");
+    
+    console.log(mo);
+    console.log(dong);
     const maxLength = dataSong.length;
     // console.log("max", maxLength);
     if (id < 0) {
@@ -54,10 +55,11 @@ function App() {
                 element={
                   <Song.Provider
                     value={{
-                      thu,
+                      mo,
                       dataSong,
                       handlePlaySong,
                       song,
+                      dong,
                       // upDateStateMenu,
                     }}
                   >

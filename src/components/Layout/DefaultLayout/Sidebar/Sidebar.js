@@ -13,42 +13,56 @@ const MENU_ITEMS = [
         id: 1,
         icon: <CaNhanIcon />,
         title: 'Cá Nhân', 
-        to: '/following'
+        to: '/canhan'
     },
     {
         id: 2,
         icon: <KhamPhaIcon />,
-        title: 'Khám Phá',    
+        title: 'Khám Phá',
+        to: '/'
+  
     },
     {
         id: 3,
         icon: <ZingIcon />,
-        title: '#zingchart',    
+        title: '#zingchart',
+        to: '/zing'
+
     },
     {
         id: 4,
         icon: <RadioIcon />,
-        title: 'Radio',    
+        title: 'Radio', 
+        to: '/radio'
+
     },
     {
         id: 5,
         icon: <TheoDoiIcon />,
-        title: 'Theo Dõi',    
+        title: 'Theo Dõi',  
+        to: '/theodoi'
+
     }, 
     {
         id: 6,
         icon: <NhacMoiIcon />,
-        title: 'Nhạc Mới',    
+        title: 'Nhạc Mới',
+       
+
     },
     {
         id: 7,
         icon: <TheLoaiIcon />,
-        title: 'Thể Loại',    
+        title: 'Thể Loại', 
+       
+
     },
     {
         id: 8,
         icon: <TopIcon />,
-        title: 'Top 100',    
+        title: 'Top 100',
+        
+
     },
     {
         id: 9,
@@ -63,7 +77,7 @@ function Sidebar() {
     
     return <div className={cx('wrapper')}>
         <div className={cx('logo')}>
-        <Link  className={cx('logo-link')}>
+        <Link to='/' className={cx('logo-link')}>
                 <img alt=""/>
                 <svg xmlns="http://www.w3.org/2000/svg" width="120" height="40" viewBox="0 0 936 266">
     <g fill="none" fill-rule="evenodd">

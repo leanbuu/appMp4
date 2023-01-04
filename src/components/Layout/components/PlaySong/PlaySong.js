@@ -1,7 +1,6 @@
 import classNames from "classnames/bind";
 import styles from "../PlaySong/PlaySong.module.scss";
 import AudioPlayer from "react-h5-audio-player";
-
 import "react-h5-audio-player/lib/styles.css";
 import img1 from "../../../../assets/Img-play1.jpg";
 import img2 from "../../../../assets/Img-play2.jpg";
@@ -17,7 +16,7 @@ const cx = classNames.bind(styles);
 
 function PlaySong( ) {
  
-  const { thu ,song } = useContext(Song);
+  const { mo ,song } = useContext(Song);
   // const [volumeText, setVolumeText] = useState("100%");
   // const handlePrev = () => {
   //   handlePlaySong(song.id - 1);
@@ -32,7 +31,7 @@ function PlaySong( ) {
   return (
     <>
       
-      <div style={{display : `${thu}` }} className={cx("player")}>
+      <div style={{display : `${mo}` }} className={cx("player")}>
           <div className={cx("play")}>
             <div className={cx("lplay")}>
               <img className={cx('img')} src={song.img} alt=''></img>

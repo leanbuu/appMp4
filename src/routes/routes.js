@@ -1,18 +1,20 @@
 
 import config from '../config';
-import Home from '../pages/Home';
-import Following from '../pages/Following';
-import Profile from '../pages/Profile';
-import Upload from '../pages/Upload';
-
+import CaNhan from '../pages/CaNhan';
+import KhamPha from '../pages/KhamPha/KhamPha';
+import Zing from '../pages/Zing/Zing';
+import Radio from '../pages/Radio/KhaPha';
+import TheoDoi from '../pages/TheoDoi/KhaPha';
 
 
 
 const publicRoutes = [
-   { path: config.routes.home, component: Home },
-   { path: config.routes.following, component: Following },
-   { path: config.routes.profile, component: Profile },
-   { path: config.routes.upload, component: Upload, layout: null },
+   { path: config.routes.canhan, component: CaNhan },
+   { path: config.routes.khampha, component: KhamPha },
+   { path: config.routes.zing, component: Zing },
+   { path: config.routes.radio, component: Radio },
+   { path: config.routes.theodoi, component: TheoDoi },
+
    
 ];
 

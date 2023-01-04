@@ -1,0 +1,26 @@
+button.rhap_button-clear.rhap_main-controls-button.rhap_play-pause-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    border-radius: 25px;
+    margin: 0 20px;
+    width: 40px;
+    height: 40px;
+    /* animation: spin 4s infinite; */
+  }
+  
+  button.rhap_button-clear.rhap_main-controls-button.rhap_play-pause-button svg{
+    color: rgb(35 27 46);
+    
+  }
+  
+  button.rhap_button-clear.rhap_main-controls-button.rhap_skip-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .rhap_stacked .rhap_controls-section {
+    margin-top: 10px;
+  }
