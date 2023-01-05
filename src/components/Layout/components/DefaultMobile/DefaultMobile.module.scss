@@ -17,8 +17,8 @@
 
 }
 .containermobi{
+    height: 0px;
     position: relative;
-    height: 60px;
     top: 0;
     width: 100%;
     z-index: 99;
@@ -206,7 +206,8 @@
 }
 .playsong{
     overflow: hidden;
-    padding-top: 52px;
+    height: calc(100% - 50px);
+    margin-top: 50px;
 }
 .song{
     position: relative;

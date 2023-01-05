@@ -1,14 +1,12 @@
 
 import classNames from "classnames/bind";
 import styles from '../DefaultMobile/DefaultMobile.module.scss'
-import img1 from '../../../../assets/Img-album3.jpg'
 import AudioPlayer from "react-h5-audio-player";
 import "react-h5-audio-player/lib/styles.css";
 import { useContext} from "react";
 import "react-h5-audio-player/lib/styles.css";
 import Song from "../../../../SongContext/Song";
 import './custom.css'
-import icon from '../../../../assets/Icon-widget.png';
 import { dataSong } from "../../../../dataSong";
 import ListMsongadd from "./ListMsongadd";
 
@@ -21,24 +19,18 @@ const cx = classNames.bind(styles);
 
 function MobilePlaySong() {
     const songContext = useContext(Song);
-    const { song, mo, handlePlaySong} = songContext;
+    const { song,  handlePlaySong, handleBat} = songContext;
     const nen = {
         anhNen: {
             backgroundImage: `url(${song.img})`
         }
     };
-    const handlePrev = () => {
-    handlePlaySong(song.id - 1);
-  };
-  const handleNext = () => {
-    handlePlaySong(song.id + 1);
-  };
-
   const handleAutoPlay = () => {
-    handlePlaySong(song.id + 1);
+    handleBat(song.id + 1);
   };
     return ( 
         <div  className={cx('playsong')}>
+          <div className="kt">
          <div  className={cx('song')}>
             <div style={nen.anhNen} className={cx('nenanh')}></div>
             <div className={cx('info')}>
@@ -61,14 +53,12 @@ function MobilePlaySong() {
           />
           </div>
           <button onClick={() => handlePlaySong(song.id)} className={cx('btnback')}>TRỞ LẠI</button>
+          </div>
           <div className={cx('contair')}>
                 <div style={{fontSize: '18px', marginBottom: '5px',marginTop: '5px', fontWeight:'700'}}>DANH SÁCH NHẠC</div>
                     <ListMsongadd items={dataSong}></ListMsongadd>
          </div>         
-          <div  className={cx('widget')}>
-                        <img className={cx('img')} src={icon} alt=''></img>
-                        <span className={cx('title')}>Trải nghiệm Zing MP3 tốt nhất trên app</span>
-                    </div>
+          
         </div>
      );
 }

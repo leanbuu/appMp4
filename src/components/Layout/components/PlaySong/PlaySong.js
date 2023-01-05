@@ -11,7 +11,7 @@ import img6 from "../../../../assets/Img-play6.jpg";
 
 import Song from "../../../../SongContext/Song";
 import { useContext} from "react";
-import { BsFillPlayFill, BsPauseFill } from "react-icons/bs";
+
 
 const cx = classNames.bind(styles);
 
@@ -62,7 +62,7 @@ function PlaySong( ) {
               onEnded={handleAutoPlay}
               onClickPrevious={handlePrev}
               onClickNext={handleNext}
-              
+            
               />
             </div>
             <div className={cx("rplay")}>
