@@ -10,11 +10,11 @@ button.rhap_button-clear.rhap_main-controls-button.rhap_play-pause-button {
     /* animation: spin 4s infinite; */
   }
   .rhap_container svg {
-    color: rgb(35 27 46);
-    font-size: 40px;
+    color: rgb(91, 84, 105);
+    font-size: 30px;
   }
   .rhap_time {
-    color: rgb(35 27 46); ;
+    color: rgb(110, 104, 121);
   }
   .rhap_stacked .rhap_controls-section {
     margin-top: 10px;
@@ -43,5 +43,5 @@ button.rhap_button-clear.rhap_main-controls-button.rhap_play-pause-button {
   }
   
   .rhap_stacked .rhap_controls-section {
-    margin-top: 8px;
+    margin-top: 0px;
   }
