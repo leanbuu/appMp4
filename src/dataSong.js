@@ -154,5 +154,32 @@ export const dataSong=[
         danhmuc: 2,
         src: 'https://stream.nixcdn.com/NhacCuaTui992/ViYeuCuDamDau-MINDenJustaTee-6135242.mp3?st=qbas-jrzo4GFp1rPLPCQfg&e=1672722073&t=1672635859927'    
     },
+    {   
+        id:18,
+        img: 'https://avatar-ex-swe.nixcdn.com/song/2022/05/24/9/6/e/a/1653363505428_500.jpg',
+        name: 'hai mươi hai (22)',
+        casi: ' AMEE, Hứa Kim Tuyền',
+        time: '3p49',
+        danhmuc: 2,
+        src: 'https://stream.nixcdn.com/NhacCuaTui2022/HaiMuoiHai22-HuaKimTuyenAMEE-7231237.mp3?st=M96WgExf0L1-Qxf-QdsJAw&e=1673008475&t=1672922117667'    
+    },
+    {   
+        id:19,
+        img: 'https://avatar-ex-swe.nixcdn.com/song/2021/02/16/b/5/c/c/1613483108880.jpg',
+        name: 'Tình Bạn Diệu Kỳ (Masew Remix)',
+        casi: ' AMEE',
+        time: '2p51',
+        danhmuc: 2,
+        src: 'https://stream.nixcdn.com/NhacCuaTui1011/TinhBanDieuKyMasewRemix-AMee-6942490.mp3?st=D1YtvfDj7YMZ1kCM5XHjUQ&e=1673008654&t=1672922294867'    
+    },
+    {   
+        id: 20,
+        img: 'https://avatar-ex-swe.nixcdn.com/song/2022/06/09/d/4/5/e/1654766693061_500.jpg',
+        name: 'Bên Trên Tầng Lầu',
+        casi: 'Tăng Duy Tân',
+        time: '3p04',
+        danhmuc: 2,
+        src: 'https://stream.nixcdn.com/NhacCuaTui2022/BenTrenTangLau-TangDuyTan-7412012.mp3?st=n3EG3jQgIkjLWo7upTQPOQ&e=1673009763&t=1672923450815'    
+    },
     
 ];
