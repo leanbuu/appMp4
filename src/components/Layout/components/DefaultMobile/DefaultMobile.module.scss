@@ -213,7 +213,6 @@
     position: relative;
     background-color: #000;
     overflow: hidden;
-    padding: 0;
 }
 .nenanh{
     position: absolute;
@@ -257,7 +256,8 @@
 }
 
 .player{
-    margin: 10px 5px;
+    margin: 10px 15px;
+    margin-top: 15px !important;
     border-radius: 50px;
     background-color: #fff;
     border: solid 2px #32323d;
