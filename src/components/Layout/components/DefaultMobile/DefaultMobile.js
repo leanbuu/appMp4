@@ -19,6 +19,7 @@ import MobilePlaySong from "./MobilePlaySong";
 import FooterMobile from "./FooterMobie";
 import Song from "../../../../SongContext/Song";
 import { useContext, useState} from "react";
+import Msong from "./Msong/Msong";
 
 const cx = classNames.bind(styles);
 const INNER = [
@@ -69,7 +70,7 @@ function DefaultLayout() {
                             </div>
                             <div className={cx('contair')}>
                                 <div style={{fontSize: '18px', marginBottom: '5px', fontWeight:'700'}}>BÀI HÁT MỚI</div>
-                                <ListMsong items={dataSong}></ListMsong>
+                                <ListMsong con={<Msong  />} items={dataSong}></ListMsong>
                             </div>
                         </div>
                        

@@ -123,8 +123,8 @@
 .contair{
     margin-right: auto;
     margin-left: auto;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
     position: relative;
     font-weight: 500;
     color: #32323d;
@@ -256,7 +256,7 @@
 }
 
 .player{
-    margin-top: 5px;
+    margin: 5px;
     background-color: rgb(40 17 102 / 10%) !important;
     padding-bottom: 5px;
 
@@ -273,15 +273,18 @@
   }
 } 
 .btnback{
-    margin-top: 40px;
+    margin-top: 20px;
     border-radius: 35px;
     position: relative;
     left: 30%;
     width: 40%;
     height: 50px;
-    background-color: transparent;
+    background-color: #65509e;
     color: #dbdbdb;
     border: solid 1px #32323d;
     font-size: 17px;
     font-weight: 700;
+}
+.listadd{
+    
 }

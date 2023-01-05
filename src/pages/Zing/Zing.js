@@ -1,5 +1,6 @@
 
 import classNames from "classnames/bind";
+import BgNen from "../../components/Layout/components/BgNen/BgNen";
 import styles from '../Zing/Zing.module.scss';
 
 const cx = classNames.bind(styles);
@@ -7,7 +8,7 @@ const cx = classNames.bind(styles);
 function Zing() {
     return ( 
         <div>
-            <div className={cx('bg')}></div>
+           <BgNen />
         </div>
      );
 }

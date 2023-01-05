@@ -11,27 +11,28 @@ import img6 from "../../../../assets/Img-play6.jpg";
 
 import Song from "../../../../SongContext/Song";
 import { useContext} from "react";
+import { BsFillPlayFill, BsPauseFill } from "react-icons/bs";
 
 const cx = classNames.bind(styles);
 
 function PlaySong( ) {
  
-  const { mo ,song } = useContext(Song);
+  const { mopc ,song, handlePlaySong } = useContext(Song);
   // const [volumeText, setVolumeText] = useState("100%");
-  // const handlePrev = () => {
-  //   handlePlaySong(song.id - 1);
-  // };
-  // const handleNext = () => {
-  //   handlePlaySong(song.id + 1);
-  // };
+  const handlePrev = () => {
+    handlePlaySong(song.id - 1);
+  };
+  const handleNext = () => {
+    handlePlaySong(song.id + 1);
+  };
 
-  // const handleAutoPlay = () => {
-  //   handlePlaySong(song.id + 1);
-  // };
+  const handleAutoPlay = () => {
+    handlePlaySong(song.id + 1);
+  };
   return (
     <>
       
-      <div style={{display : `${mo}` }} className={cx("player")}>
+      <div style={{display : `${mopc}` }} className={cx("player")}>
           <div className={cx("play")}>
             <div className={cx("lplay")}>
               <img className={cx('img')} src={song.img} alt=''></img>
@@ -53,7 +54,16 @@ function PlaySong( ) {
               </div>
             </div>
             <div className={cx("ceplay")}>
-              <AudioPlayer src={song.src} />
+              <AudioPlayer 
+              src={song.src} 
+              showSkipControls={true}
+              showJumpControls={false}
+              autoPlay={true}
+              onEnded={handleAutoPlay}
+              onClickPrevious={handlePrev}
+              onClickNext={handleNext}
+              
+              />
             </div>
             <div className={cx("rplay")}>
             <div className={cx("iconl")}>

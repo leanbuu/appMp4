@@ -1,7 +1,7 @@
 
 import classNames from "classnames/bind";
-import styles from '../ListMsong/ListMsong.module.scss'
-import Msong from "../Msong/Msong";
+import styles from '../ListMsongadd/ListMsongadd.module.scss'
+import Msongadd from "../Msongadd/Msongadd";
 import { useContext } from "react";
 import Song from "../../../../../SongContext/Song";
 
@@ -9,7 +9,7 @@ import Song from "../../../../../SongContext/Song";
 const cx = classNames.bind(styles);
 
 
-function ListMsong({items =[]}) {
+function ListMsongadd({items =[]}) {
     const { song } = useContext(Song);
     const renderItems = () => {
         let arrFilter = 2  ? items.filter(item => {
@@ -18,7 +18,7 @@ function ListMsong({items =[]}) {
         return arrFilter.map((item, index) => (
             <>
             {         
-                    <Msong key={item.id} data={item} bien={song.id} />
+                    <Msongadd key={item.id} data={item} bien={song.id} />
             } 
             
             </>
@@ -31,4 +31,4 @@ function ListMsong({items =[]}) {
         
      );
 }
-export default ListMsong;
+export default ListMsongadd;

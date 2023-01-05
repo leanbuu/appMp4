@@ -1,6 +1,6 @@
 
 import classNames from "classnames/bind";
-import styles from './Msong.module.scss'
+import styles from './Msongadd.module.scss'
 
 import { useContext} from "react";
 import "react-h5-audio-player/lib/styles.css";
@@ -12,10 +12,10 @@ const cx = classNames.bind(styles);
 function Msong({data, bien}) {
     let active = bien;
     const songContext = useContext(Song);
-    const { handlePlaySong } = songContext;
+    const { handleBat } = songContext;
     
     return ( 
-        <div  onClick={() => handlePlaySong(data.id) } className={`${styles.item} ${data?.id === active ?styles.active:""}`}>
+        <div  onClick={() => handleBat(data.id) } className={`${styles.item} ${data?.id === active ?styles.active:""}`}>
         <img src={data.img} alt="" className={cx('img')}></img>
         <div className={cx('info')}>
         <div className={cx('title')}>{data.name}</div>

@@ -10,12 +10,18 @@ function App() {
   // const [isShowMenu, setIsShowMenu] = useState(false);
   const [mo, setMo] = useState("none");
   const [dong, setDong] = useState('block');
-
+  const [mopc, setMopc] = useState('none');
   // xu ly play
+  const handleBat = (id) =>{
+    setDong(dong === 'block' ? "none" : 'none');
+    setMo(mo === "none" ? 'block' : "block");
+    const newSong = dataSong.find((item) => item.id === id);
+    setSong(newSong);
+  }
   const handlePlaySong = (id) => {
     setDong(dong === 'block' ? "none" : 'block');
     setMo(mo === "none" ? 'block' : "none");
-    
+    setMopc('block')
     console.log(mo);
     console.log(dong);
     const maxLength = dataSong.length;
@@ -55,6 +61,8 @@ function App() {
                 element={
                   <Song.Provider
                     value={{
+                      handleBat,
+                      mopc,
                       mo,
                       dataSong,
                       handlePlaySong,

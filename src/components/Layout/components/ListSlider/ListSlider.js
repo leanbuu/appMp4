@@ -27,7 +27,7 @@ function ListSlider() {
     slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 2500,
+    autoplaySpeed: 3000,
     speed: 500,
     swipe: false,
     touchMove: false,
