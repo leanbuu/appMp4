@@ -30,7 +30,6 @@ function MobilePlaySong() {
   };
     return ( 
         <div  className={cx('playsong')}>
-          <div className="kt">
          <div  className={cx('song')}>
             <div style={nen.anhNen} className={cx('nenanh')}></div>
             <div className={cx('info')}>
@@ -43,6 +42,7 @@ function MobilePlaySong() {
             </div>
          </div>
          <div className={cx('player')}>
+         <div className={cx('playercon')}>
          <AudioPlayer  
           src={song.src} 
           showJumpControls={true}
@@ -52,8 +52,8 @@ function MobilePlaySong() {
           customAdditionalControls={[]} 
           />
           </div>
-          <button onClick={() => handlePlaySong(song.id)} className={cx('btnback')}>TRỞ LẠI</button>
           </div>
+          <button onClick={() => handlePlaySong(song.id)} className={cx('btnback')}>TRỞ LẠI</button>
           <div className={cx('contair')}>
                 <div style={{fontSize: '18px', marginBottom: '5px',marginTop: '5px', fontWeight:'700'}}>DANH SÁCH NHẠC</div>
                     <ListMsongadd items={dataSong}></ListMsongadd>

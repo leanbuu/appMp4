@@ -9,18 +9,39 @@ button.rhap_button-clear.rhap_main-controls-button.rhap_play-pause-button {
     height: 40px;
     /* animation: spin 4s infinite; */
   }
-  
+  .rhap_container svg {
+    color: rgb(35 27 46);
+    font-size: 40px;
+  }
+  .rhap_time {
+    color: rgb(35 27 46); ;
+  }
+  .rhap_stacked .rhap_controls-section {
+    margin-top: 10px;
+  }
   button.rhap_button-clear.rhap_main-controls-button.rhap_play-pause-button svg{
     color: rgb(35 27 46);
     
   }
-  
+  .rhap_progress-indicator {
+    background: rgb(35 27 46);
+    width: 15px;
+    height: 15px;
+    top: -5px;
+  }
   button.rhap_button-clear.rhap_main-controls-button.rhap_skip-button {
     display: flex;
     justify-content: center;
     align-items: center;
   }
+  .rhap_download-progress {
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    background-color: #dddddd;
+    border-radius: 2px;
+  }
   
   .rhap_stacked .rhap_controls-section {
-    margin-top: 10px;
+    margin-top: 8px;
   }

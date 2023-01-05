@@ -88,23 +88,6 @@ function DefaultLayout() {
                         </div>
                        
                     </div>
-                    {/* <div className={cx('backplay')}>
-                        <img className={cx('backimg')} src={song.img}></img>
-                        <div className={cx('backname')}><span>{song.name}</span></div>
-                        <div className={cx('backsrc')}>
-                        <AudioPlayer 
-                        src={song.src}
-                        showSkipControls={false}
-                        showJumpControls={false}
-                        autoPlay={false}
-                        showDownloadProgress={false}
-                        showFilledProgress={false}
-                        hasDefaultKeyBindings={false}
-                        customVolumeControls={[]}
-                        customAdditionalControls={[]} />
-                         
-                        </div>
-                    </div> */}
                     <div className={cx('widget')}>
                         <img className={cx('img')} src={icon} alt=''></img>
                         <span className={cx('title')}>Trải nghiệm Zing MP3 tốt nhất trên app</span>

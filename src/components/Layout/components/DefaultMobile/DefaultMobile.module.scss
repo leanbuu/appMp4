@@ -17,7 +17,7 @@
 
 }
 .containermobi{
-    height: 0px;
+    height: 10px;
     position: relative;
     top: 0;
     width: 100%;
@@ -257,10 +257,11 @@
 }
 
 .player{
-    margin: 5px;
-    background-color: rgb(40 17 102 / 10%) !important;
+    margin: 10px 5px;
+    border-radius: 50px;
+    background-color: #fff;
+    border: solid 2px #32323d;
     padding-bottom: 5px;
-
 &.button.rhap_button-clear{
     display: flex;
     align-items: center;
@@ -272,9 +273,13 @@
     height: 50px;
     /* animation: spin 4s infinite; */
   }
+}
+.playercon{
+    padding: 5px 30px;
 } 
 .btnback{
-    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-top: 5px;
     border-radius: 35px;
     position: relative;
     left: 30%;
