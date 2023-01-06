@@ -1,8 +1,8 @@
 import classNames from "classnames/bind";
 import styles from "../Media/Media.module.scss";
-
-import { useContext} from "react";
 import "react-h5-audio-player/lib/styles.css";
+import { useContext} from "react";
+
 import Song from "../../../../SongContext/Song";
 
 const cx = classNames.bind(styles);
@@ -12,12 +12,6 @@ function Media({ data, bien}) {
   const songContext = useContext(Song);
   const { handlePlaySong } = songContext;
  
-  
-
-  // const { upDateStateMenu } = useContext(Song);
-//   const location = useLocation();
-//   const { pathname } = location;
-//   console.log("check locate :>>", location);
 
   return (
     <>

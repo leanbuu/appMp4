@@ -28,6 +28,7 @@ function MobilePlaySong() {
   const handleAutoPlay = () => {
     handleBat(song.id + 1);
   };
+
     return ( 
         <div  className={cx('playsong')}>
          <div  className={cx('song')}>
@@ -45,6 +46,7 @@ function MobilePlaySong() {
          <div className={cx('playercon')}>
          <AudioPlayer  
           src={song.src} 
+          showSkipControls={false}
           showJumpControls={true}
           autoPlay={true}
           onEnded={handleAutoPlay}

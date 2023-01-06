@@ -8,6 +8,7 @@ function BgNen() {
     return ( 
         <>
         <div className={cx('bg')}></div>
+        <div className={cx('bga')}></div>
         <div className={cx('bgal')}></div>
         </>
      );

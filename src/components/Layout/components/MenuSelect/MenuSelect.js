@@ -6,6 +6,7 @@ import ButtonContent from "../ButtonContent";
 import {  useState } from "react";
 import MenuMedia from "../MenuMedia";
 import { dataSong } from "../../../../dataSong";
+import { Link } from "react-router-dom";
 
 
 
@@ -28,7 +29,9 @@ function MenuSelect({ items = [] }) {
     <div className={cx('menu-select')}>
     {renderItems()}
     <div className={cx('dis')}>
+    <Link to={'/zing'}>
     <button className={cx('btn')}> TẤT CẢ  </button>
+    </Link>
     </div>
     </div> 
     <MenuMedia items={dataSong} isActive={active}/>

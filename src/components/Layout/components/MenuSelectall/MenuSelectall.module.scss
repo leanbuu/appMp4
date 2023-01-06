@@ -1,0 +1,27 @@
+
+.menu-select{
+    display: flex;
+    margin-top: 5px;
+    margin-bottom: 16px;
+}
+
+.dis{
+    position: absolute;
+    right: 0px;
+    align-items: center;
+    font-weight: 500;
+}
+
+.btn{
+    font-size: 13px;
+    font-weight: 500;
+    text-transform:uppercase;
+    color: hsl(0deg 0% 100% / 50%);
+    background-color: #170f23;
+    border: 0px transparent solid;
+    cursor: pointer;
+    font-family: Inter,sans-serif;
+    &:hover{
+        color: #c273ed;
+    }
+}

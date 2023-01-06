@@ -7,7 +7,7 @@ import styles from '../ButtonContent/ButtonContent.module.scss'
 function ButtonContent( { data, bien }) {
     let active = bien;
     return ( 
-        <button  className={`${styles.select} ${data?.id === active ?styles.active:""}`}>
+        <button title={data.id}  className={`${styles.select} ${data?.id === active ?styles.active:""}`}>
             {data.name}
         </button>
      )
