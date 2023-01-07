@@ -13,7 +13,7 @@ import { dataSong } from "../../../../dataSong";
 import "react-h5-audio-player/lib/styles.css"; 
 import MenuMalbum2 from "../MenuMalbum2";
 import ListMovie from '../ListMovie'
-import MobilePlaySong from "./MobilePlaySong";
+import MobilePlaySong from "./MobilePlaySong/MobilePlaySong";
 import FooterMobile from "./FooterMobie";
 import Song from "../../../../SongContext/Song";
 import { useContext, useState} from "react";
