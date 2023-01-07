@@ -10,8 +10,6 @@ import Imgvip from '../../../../assets/Img-vip.png';
 import MenuMalbum from "../MenuMalbum";
 import ListMsong from "./ListMsong";
 import { dataSong } from "../../../../dataSong";
-import AudioPlayer from "react-h5-audio-player";
-import { BsFillPlayFill, BsPause, BsPauseFill } from "react-icons/bs";
 import "react-h5-audio-player/lib/styles.css"; 
 import MenuMalbum2 from "../MenuMalbum2";
 import ListMovie from '../ListMovie'
@@ -38,23 +36,16 @@ const INNER = [
  ]
 
 function DefaultLayout() {
-   const [active, setActive] = useState(false)
-   function handleShow() {
-   setActive(true);
-   }
-   function handleClose() {
-   setActive(false);
-   }
 
-   const {song, dong , mo } = useContext(Song);
+   const {song, dong , mo, dong1, handlePlaySong, mo1 } = useContext(Song);
     return ( 
         <div  className={cx('wrappermobi')}>
                 <div className={cx('containermobi')}>
                     <MobileHeader />
-                    <div style={{display : `${mo}` }} className={`${styles.shownhac} ${active ?styles.active:""}`} >
+                    <div style={{display : `${mo}` }} className={`${styles.shownhac}`} >
                     <MobilePlaySong />
                     </div>
-                    <div style={{display : `${dong}` }} className={`${styles.nghenhac} ${active ?styles.active:""}`}>    
+                    <div style={{display : `${dong}` }} className={`${styles.nghenhac}`}>    
                     <MenuInner items={INNER}></MenuInner>
                     <div className={cx('contentmobi')}>
                     <MenuSlider></MenuSlider>
@@ -88,7 +79,16 @@ function DefaultLayout() {
                         </div>
                        
                     </div>
-                    <div className={cx('widget')}>
+                    <div  onClick={() => handlePlaySong(song.id)} style={{display : `${mo1}` }} className={cx('thanhplay')}>
+                      <div className={cx('content')}>
+                        <div className={cx('playti')}><div className={cx('span')}>Bài Hát Đang Phát:</div></div>
+                      <div className={cx('bocimg')}>
+                      <img className={cx('imgplay')} src={song.img} alt=''></img> 
+                      </div>
+                      <div className={cx('playname')}><div className={cx('span')}>{song.name}</div></div>
+                      </div>
+                    </div>
+                    <div  style={{display : `${dong1}` }} className={cx('widget')}>
                         <img className={cx('img')} src={icon} alt=''></img>
                         <span className={cx('title')}>Trải nghiệm Zing MP3 tốt nhất trên app</span>
                     </div>

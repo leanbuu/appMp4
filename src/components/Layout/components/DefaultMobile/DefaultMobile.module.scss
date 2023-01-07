@@ -77,6 +77,66 @@
     width: 90%;
     z-index: 10;
 }
+.thanhplay{
+    padding: 0px 2%;
+    display: flex;
+    background-color: #fcfcfc;
+    border: solid 2px #32323d;
+    border-radius: 30px;
+    bottom: 10px;
+    color: #000;
+    font-size: 14px;
+    font-weight: 700;
+    height: 50px;
+    left: 4.5%;
+    position: fixed;
+    text-align: center;
+    width: 86%;
+    z-index: 10;
+}
+.content{
+    width: 100%;
+    position: relative;
+    height: 50px;
+    display: flex;
+}
+.span{
+   white-space: nowrap;
+   overflow: hidden;
+   text-overflow: ellipsis;
+   width: 100%;
+   height: 10px;
+   padding: 13px 0px;
+   
+}
+.playname{
+    width: 40%;
+    align-items: center;
+}
+.playti{
+    width: 40%;
+    align-items: center;
+}
+.bocimg{
+    width: 20%;
+}
+.imgplay{
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    border-radius: 50%;
+    animation: app-logo-spin infinite 5s linear
+}
+
+@keyframes app-logo-spin {
+  from {
+    transform: rotate(0deg)
+  }
+  to {
+    transform: rotate(360deg)
+  }
+}
 .backplay{
     background-color: #32323d;
     border: solid 0px transparent;

@@ -17,7 +17,7 @@ const cx = classNames.bind(styles);
 
 function PlaySong( ) {
  
-  const { mopc ,song, handlePlaySong } = useContext(Song);
+  const { xoay, mopc ,song, handlePlaySong, handleXoay, handleDung } = useContext(Song);
   // const [volumeText, setVolumeText] = useState("100%");
   const handlePrev = () => {
     handlePlaySong(song.id - 1);
@@ -29,13 +29,16 @@ function PlaySong( ) {
   const handleAutoPlay = () => {
     handlePlaySong(song.id + 1);
   };
+  const handlePause = () => {
+    handleDung(song.id);
+  }
   return (
     <>
       
       <div style={{display : `${mopc}` }} className={cx("player")}>
           <div className={cx("play")}>
             <div className={cx("lplay")}>
-              <img className={cx('img')} src={song.img} alt=''></img>
+              <img className={cx(xoay)} src={song.img} alt=''></img>
               <div className={cx("content")}>
                 <div className={cx("name")}>
                   <span>{song.name}</span>
@@ -58,8 +61,9 @@ function PlaySong( ) {
               src={song.src} 
               showSkipControls={true}
               showJumpControls={false}
-              autoPlay={true}
               onEnded={handleAutoPlay}
+              onPause={handleDung}
+              onPlay={handleXoay}
               onClickPrevious={handlePrev}
               onClickNext={handleNext}
             

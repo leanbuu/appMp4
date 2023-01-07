@@ -28,6 +28,23 @@
     border-radius: 4px;
     margin-right: 10px;
 }
+.imgxoay{
+    width: 64px ;
+    height: 100%;
+    border-radius: 50%;
+    margin-right: 10px;
+    animation: app-logo-spin infinite 5s linear
+}
+
+
+@keyframes app-logo-spin {
+  from {
+    transform: rotate(0deg)
+  }
+  to {
+    transform: rotate(360deg)
+  }
+}
 .content{
     margin-top: 14px;
     height: 35px;

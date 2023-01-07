@@ -8,10 +8,13 @@ import { dataSong } from "./dataSong";
 function App() {
   const [song, setSong] = useState(dataSong[0]);
   // const [isShowMenu, setIsShowMenu] = useState(false);
+  const [dong1, setDong1] = useState('block')
+  const [mo1, setMo1] = useState('none')
   const [mo, setMo] = useState("none");
   const [dong, setDong] = useState('block');
   const [mopc, setMopc] = useState('none');
   const [ac, setAc] = useState(2);
+  const [xoay, setXoay] = useState('img')
   const truyen = (active) =>{
     setAc(active)
     console.log(ac)
@@ -23,11 +26,19 @@ function App() {
     const newSong = dataSong.find((item) => item.id === id);
     setSong(newSong);
   }
+  const handleXoay = (id) =>{
+    setXoay(xoay === 'img' ? 'imgxoay' : 'imgxoay' )
+  }
+  const handleDung = (id) =>{
+    setXoay(xoay === 'imgxoay' ? 'img' : 'img' )
+  }
 
   const handlePlaySong = (id) => {
     setDong(dong === 'block' ? "none" : 'block');
     setMo(mo === "none" ? 'block' : "none");
     setMopc('block')
+    setDong1('none');
+    setMo1('block');
     console.log(mo);
     console.log(dong);
     const maxLength = dataSong.length;
@@ -67,6 +78,11 @@ function App() {
                 element={
                   <Song.Provider
                     value={{
+                      dong1,
+                      mo1,
+                      handleDung,
+                      xoay, 
+                      handleXoay,
                       ac,
                       truyen,
                       handleBat,

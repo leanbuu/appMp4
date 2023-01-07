@@ -48,7 +48,6 @@ function MobilePlaySong() {
           src={song.src} 
           showSkipControls={false}
           showJumpControls={true}
-          autoPlay={true}
           onEnded={handleAutoPlay}
           customVolumeControls={[]}
           customAdditionalControls={[]} 
