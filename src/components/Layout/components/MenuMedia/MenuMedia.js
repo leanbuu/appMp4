@@ -11,7 +11,7 @@ function MenuMedia( {items =[], isActive }) {
     const { song } = useContext(Song);
     const renderItems = () => {
         let arrFilter = isActive > 1 ? items.filter(item => {
-            return item.danhmuc === isActive
+            return item.danhmuc === isActive && item.id < 18
         }) : items
         return arrFilter.map((item, index) => (
             <>

@@ -1,8 +1,8 @@
 import React from "react";
 import { createContext } from "react";
 
-const Song = createContext();
+const PlayList = createContext();
 
 
-export default Song;
+export default PlayList;
 

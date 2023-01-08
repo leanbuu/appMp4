@@ -5,7 +5,7 @@ import List from "../../components/Layout/components/List";
 import ListNgheSi from '../../components/Layout/components/ListNgheSi'
 import ListSlider from "../../components/Layout/components/ListSlider";
 import MenuNgheSi from "../../components/Layout/components/MenuNgheSi";
-import MenuBest from "../../components/Layout/components/MenuBest";
+import MenuBest from '../../components/Layout/components/MenuBest'
 import ListSliderCasi from "../../components/Layout/components/ListSliderCasi";
 import SuKien from "../../components/Layout/components/SuKien";
 import img1 from "../../assets/Img-sukien1.webp";
@@ -15,6 +15,7 @@ import MenuSelect from "../../components/Layout/components/MenuSelect";
 import Footer from "../../components/Layout/components/Footer";
 
 import ListSliderNhacMoi from "../../components/Layout/components/ListSliderNhacMoi";
+import { dataPlaylist } from "../../dataPlaylist";
 
 
 const cx = classNames.bind(styles);
@@ -36,7 +37,7 @@ const SELECT = [
       name: "QUỐC TẾ",
     },
   ];
-  
+
 
 function KhamPha() {
     return ( 
@@ -47,29 +48,34 @@ function KhamPha() {
 
               <div className={cx("title")}>Hay nhất của 2022 ⭐</div>
               <ListNgheSi props={<MenuBest />} />
-              <div style={{ marginBottom: "20px" }} className={cx("title")}>
+             <div style={{ marginBottom: "20px" }} className={cx("title")}>
                 Mới Phát Hành
               </div>
               <MenuSelect items={SELECT}></MenuSelect>
               <div className={cx("title")}>Nghệ Sĩ Đang Được Yêu Thích</div>
-              <ListNgheSi props={<MenuNgheSi />} />
+              <ListNgheSi props={<MenuNgheSi items={dataPlaylist} />} /> 
+             
               <div className={cx("playlist")}>
                 <List props={"Có Thể Bạn Muốn Nghe"} />
                 <div style={{ marginTop: "48px" }}>
                   <List props={"Nhạc Mới Mỗi Ngày"} />
                 </div>
+                 
                 <div className={cx("slidercasi")}>
                   <ListSliderCasi />
                 </div>
+                
                 <div style={{ marginBottom: "20px" }} className={cx("title")}>
                   Nhạc Mới
                 </div>
+                
                 <div className={cx("listnhacmoi")}>
                   <ListSliderNhacMoi />
                 </div>
+               
                 <div style={{ marginBottom: "20px" }} className={cx("title")}>
                   Sự Kiện
-                </div>
+                </div> 
                 <div className={cx("listsukien")}>
                   <SuKien
                     casi={img2}
@@ -88,8 +94,8 @@ function KhamPha() {
                   />
                 </div>
                 <Footer />
-                </div>
-               
+                </div> 
+              
             </>
      );
 }

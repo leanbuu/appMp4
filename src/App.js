@@ -2,10 +2,13 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import DefaultLayout from "./components/Layout/DefaultLayout";
 import { publicRoutes } from "./routes";
 import { Fragment, useState } from "react";
-import Song from "./SongContext/Song";
+import  Song  from "./SongContext/Song";
+import PlayList from "./PlayListContext/PlayList";
 import { dataSong } from "./dataSong";
+import { dataPlaylist } from "./dataPlaylist";
 
 function App() {
+  const [playlist, setPlaylist] = useState(dataPlaylist[0]);
   const [song, setSong] = useState(dataSong[0]);
   // const [isShowMenu, setIsShowMenu] = useState(false);
   const [dong1, setDong1] = useState('block')
@@ -15,6 +18,7 @@ function App() {
   const [mopc, setMopc] = useState('none');
   const [ac, setAc] = useState(2);
   const [xoay, setXoay] = useState('img')
+  const [moimg, setMoimg] = useState('none')
   const truyen = (active) =>{
     setAc(active)
     console.log(ac)
@@ -27,20 +31,23 @@ function App() {
     setSong(newSong);
   }
   const handleXoay = (id) =>{
-    setXoay(xoay === 'img' ? 'imgxoay' : 'imgxoay' )
+    setXoay(xoay === 'img' ? 'imgxoay' : 'imgxoay')
+    setMoimg(moimg === 'none' ? 'block' :'block')
   }
   const handleDung = (id) =>{
     setXoay(xoay === 'imgxoay' ? 'img' : 'img' )
+    setMoimg(moimg === 'block' ? 'none' :'none')
   }
-
+  const handlePlayList = (id) =>{
+    const newList = dataPlaylist.find((item) => item.id === id);
+    setPlaylist(newList);
+  }
   const handlePlaySong = (id) => {
     setDong(dong === 'block' ? "none" : 'block');
     setMo(mo === "none" ? 'block' : "none");
     setMopc('block')
     setDong1('none');
     setMo1('block');
-    console.log(mo);
-    console.log(dong);
     const maxLength = dataSong.length;
     // console.log("max", maxLength);
     if (id < 0) {
@@ -77,7 +84,9 @@ function App() {
                 path={route.path}
                 element={
                   <Song.Provider
+                  
                     value={{
+                      moimg,
                       dong1,
                       mo1,
                       handleDung,
@@ -92,12 +101,22 @@ function App() {
                       handlePlaySong,
                       song,
                       dong,
+                      playlist,
                       // upDateStateMenu,
                     }}
                   >
+                  <PlayList.Provider
+                   value={{
+                    handlePlayList,
+                    playlist,
+                    // upDateStateMenu,
+                  }}
+                >
+                 
                     <Layout>
                       <Page />
                     </Layout>
+                    </PlayList.Provider>
                   </Song.Provider>
                 }
               />

@@ -11,12 +11,17 @@ const cx = classNames.bind(styles);
 function ItemZing({data, bien}) {
   let active = bien;
   const songContext = useContext(Song);
-  const { handlePlaySong } = songContext;
+  const { handlePlaySong, moimg } = songContext;
     return ( 
         <div onClick={() => handlePlaySong(data.id)} className={`${styles.item} ${data?.id === active ?styles.active:""}`}>
             <div className={cx('left')}>
               <div className={cx('icon')}> <FiMusic /> </div>
-               <img src={data.img} className={cx('img')} alt=''></img>
+              <div className={cx("imgtong")}>
+               <div  style={{display : `${moimg}` }} onClick={() => handlePlaySong(data.id)} className={`${styles.img} ${data?.id === active ?styles.active:""}`}>
+                  <div  className={cx('i')}></div>
+               </div>
+               <img src={data.img} className={cx('imga')} alt=''></img>
+               </div>
                <div className={cx('info')}>
                  <div className={cx('name')}>{data.name}</div>
                  <div className={cx('casi')}>{data.casi}</div>
