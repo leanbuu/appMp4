@@ -12,11 +12,16 @@ const cx = classNames.bind(styles);
 function Msong({data, bien}) {
     let active = bien;
     const songContext = useContext(Song);
-    const { handlePlaySong } = songContext;
+    const { handlePlaySong, moimg } = songContext;
     
     return ( 
         <div  onClick={() => handlePlaySong(data.id) } className={`${styles.item} ${data?.id === active ?styles.active:""}`}>
-        <img src={data.img} alt="" className={cx('img')}></img>
+        <div className={cx('imgtong')}>
+        <div style={{display : `${moimg}` }}   className={`${styles.img} ${data?.id === active ?styles.active:""}`}>
+           <div className={cx('i')}></div>
+        </div>
+        <img src={data.img} alt="" className={cx('imga')}></img>
+        </div>
         <div className={cx('info')}>
         <div className={cx('title')}>{data.name}</div>
         <div className={cx('artist')}>{data.casi}</div>

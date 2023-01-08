@@ -20,7 +20,7 @@ function Media({ data, bien}) {
           <div style={{display : `${moimg}` }} onClick={() => handlePlaySong(data.id)} className={`${styles.img} ${data?.id === active ?styles.active:""}`}>
             <div  className={cx('i')}></div>
           </div>
-          <img className={cx("img-media")} src={data.img} alt=""></img>
+          <img className={cx  ("img-media")} src={data.img} alt=""></img>
         </div>
         <div className={cx("card-info")}>
           <div className={cx("tieude")}>{data.name}</div>

@@ -33,6 +33,8 @@ function App() {
   const handleXoay = (id) =>{
     setXoay(xoay === 'img' ? 'imgxoay' : 'imgxoay')
     setMoimg(moimg === 'none' ? 'block' :'block')
+    console.log(id)
+    
   }
   const handleDung = (id) =>{
     setXoay(xoay === 'imgxoay' ? 'img' : 'img' )

@@ -25,10 +25,6 @@ function MobilePlaySong() {
   const handleAutoPlay = () => {
     handleBat(song.id + 1);
   };
-  const handlePause = () => {
-    handleDung(song.id);
-  }
-
     return ( 
         <div  className={cx('playsong')}>
          <div  className={cx('song')}>
@@ -58,7 +54,7 @@ function MobilePlaySong() {
           </div>
           <button onClick={() => handlePlaySong(song.id)} className={cx('btnback')}>TRỞ LẠI</button>
           <div className={cx('contair')}>
-                <div style={{fontSize: '18px', marginBottom: '5px',marginTop: '5px', fontWeight:'700'}}>DANH SÁCH NHẠC</div>
+                <div style={{fontSize: '18px',marginLeft:'5px', marginBottom: '5px',marginTop: '5px', fontWeight:'700'}}>DANH SÁCH NHẠC</div>
                     <ListMsongadd items={dataSong}></ListMsongadd>
          </div>         
           
