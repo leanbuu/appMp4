@@ -52,6 +52,7 @@ export const dataSong=[
     },
     {   
         id: 6,
+        album: 3,
         img: 'https://avatar-ex-swe.nixcdn.com/song/2021/11/19/6/d/9/1/1637317177185.jpg',
         name: 'Bước Qua Nhau',
         casi: ' Vũ',
@@ -61,6 +62,7 @@ export const dataSong=[
     },
     {   
         id: 7,
+        album: 3,
         img: 'https://avatar-ex-swe.nixcdn.com/song/2022/08/05/5/b/8/a/1659665880915_500.jpg',
         name: 'Vì Anh Đâu Có Biết',
         casi: 'Madihu, Vũ',
@@ -124,6 +126,7 @@ export const dataSong=[
     },
     {   
         id: 14,
+        album: 4,
         img: 'https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_webp/cover/a/6/8/b/a68b0bd411adc076ba6c3fb00203a1ee.jpg',
         name: 'Chạy Ngay Đi',
         casi: ' Sơn Tùng M-TP',
@@ -153,6 +156,7 @@ export const dataSong=[
     },
     {   
         id: 17  ,
+        album: 4,
         img: 'https://avatar-ex-swe.nixcdn.com/song/2018/01/11/a/6/9/9/1515661840242_500.jpg',
         name: 'Nơi Này Có Anh Remix',
         casi: 'Sơn Tùng M-TP',
@@ -182,6 +186,7 @@ export const dataSong=[
     },
     {   
         id: 20,
+        album: 5,
         img: 'https://avatar-ex-swe.nixcdn.com/song/2022/06/09/d/4/5/e/1654766693061_500.jpg',
         name: 'Bên Trên Tầng Lầu',
         casi: 'Tăng Duy Tân',
