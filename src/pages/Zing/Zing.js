@@ -7,6 +7,7 @@ import { dataSong } from "../../dataSong";
 import { useState, useContext } from "react";
 import MenuSelectall from "../../components/Layout/components/MenuSelectall";
 import Song from "../../SongContext/Song";
+import Header from "../../components/Layout/DefaultLayout/Header";
 
 
 
@@ -29,6 +30,9 @@ function Zing() {
    const { ac } = songContext;
     return ( 
         <div>
+          <div className={cx("container")}>
+            <Header />
+            <div className={cx("content")}>
            <BgNen />
           <div className={cx('zing')}>Mới Phát Hành</div>
           <div className={cx('cat')}></div>
@@ -41,6 +45,8 @@ function Zing() {
             </div>       
             <ListZing items={dataSong} isActive={ac}/>
           </div>
+        </div>
+        </div>
         </div>
      );
 }

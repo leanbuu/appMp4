@@ -1,0 +1,27 @@
+.container{
+    background-color: var(--layout-bg);
+    display: flex;
+    flex-direction: column;
+    font-family: Inter,sans-serif;
+    height: 80px;
+    left: 240px;
+    min-height: 100%;
+    overflow: auto;
+    overflow: -moz-scrollbars-none;
+    padding: 0 59px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    transition: right .4s;
+    z-index: 99;
+}
+
+.container::-webkit-scrollbar { 
+  width: 0 !important;
+  display: none; 
+}
+.content {
+    position: relative;
+    flex: 1;
+    margin-top: 73px;
+}

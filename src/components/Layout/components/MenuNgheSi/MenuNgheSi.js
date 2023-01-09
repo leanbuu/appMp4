@@ -8,7 +8,6 @@ const cx = classNames.bind(styles);
 
 
 function MenuNgheSi({items = []}) {
-   console.log(items)
    const [active, setActive] = useState(1);
    const renderItems = () => {
        return items.map((item, index) => (            

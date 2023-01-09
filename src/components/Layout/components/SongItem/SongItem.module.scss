@@ -1,0 +1,86 @@
+.songitem{
+    cursor: pointer;
+    display: flex;
+    position: relative;
+    align-items: center;
+    display: flex;
+    text-align: left;
+    padding: 10px;
+    border-radius: 5px;
+    &:hover{
+        background-color: #2f2739;
+    }
+    &.active{
+        background-color: #2f2739;
+}
+}
+.itemleft{
+    width: 50%;
+    display: flex;
+    margin-right: 275px;
+}
+.imgtong{
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    position: relative;
+}
+.img{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+    &.active{
+    border-radius: 6px;
+    border:  0px solid #170f23;
+    cursor: pointer;
+    z-index: 110;
+    background-color: rgb(0 0 0 / 50%);
+    }
+ }
+ .i{
+     position: relative;
+     background-image: url(https://zmp3-static.zmdcdn.me/skins/zmp3-v6.1/images/icons/icon-playing.gif);
+     width: 16px;
+     height: 16px;
+     background-size: 18px;
+     background-repeat: no-repeat;
+     background-position: 50%;
+     top: 11px;
+     left: 11px;
+ }
+
+.imga{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    margin-right: 10px;
+    z-index: 100;
+}
+.icon{
+    display: flex;
+    margin-right: 10px;
+    justify-content: center;
+    align-items: center;
+    color: hsl(0deg 0% 100% / 50%);
+}
+.info{
+    display: flex;
+    flex-direction: column;
+}
+.name{
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+}
+.casi{
+    color: hsl(0deg 0% 100% / 50%);
+    font-size: 12px;
+}
+.timesong{
+    color: hsl(0deg 0% 100% / 50%);
+    font-size: 12px;
+}

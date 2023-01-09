@@ -15,7 +15,7 @@ function NgheSi( { data, bien } ) {
     return ( 
         <Link  className={cx('link')} to={'/theodoi'}>
         <div  onClick={() => handlePlayList(data.id)}  className={cx('card')}>
-               <div className={cx('anh')}>
+               <div  className={cx('anh')}>
                 <img  className={cx('img')} src={data.img} alt=""></img>
                 </div>
                 <div className={cx('content')}>

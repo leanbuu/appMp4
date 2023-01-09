@@ -19,6 +19,7 @@ function App() {
   const [ac, setAc] = useState(2);
   const [xoay, setXoay] = useState('img')
   const [moimg, setMoimg] = useState('none')
+  const [album, setAlbum] = useState(1);
   const truyen = (active) =>{
     setAc(active)
     console.log(ac)
@@ -30,11 +31,10 @@ function App() {
     const newSong = dataSong.find((item) => item.id === id);
     setSong(newSong);
   }
+
   const handleXoay = (id) =>{
     setXoay(xoay === 'img' ? 'imgxoay' : 'imgxoay')
     setMoimg(moimg === 'none' ? 'block' :'block')
-    console.log(id)
-    
   }
   const handleDung = (id) =>{
     setXoay(xoay === 'imgxoay' ? 'img' : 'img' )
@@ -43,6 +43,8 @@ function App() {
   const handlePlayList = (id) =>{
     const newList = dataPlaylist.find((item) => item.id === id);
     setPlaylist(newList);
+    setAlbum(id);
+    
   }
   const handlePlaySong = (id) => {
     setDong(dong === 'block' ? "none" : 'block');
@@ -86,8 +88,8 @@ function App() {
                 path={route.path}
                 element={
                   <Song.Provider
-                  
                     value={{
+                      album,
                       moimg,
                       dong1,
                       mo1,
@@ -109,6 +111,7 @@ function App() {
                   >
                   <PlayList.Provider
                    value={{
+                    album,
                     handlePlayList,
                     playlist,
                     // upDateStateMenu,

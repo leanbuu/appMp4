@@ -1,0 +1,81 @@
+.playlist{
+    position: relative;
+    margin-left: 30px;
+    margin-bottom: 10px;
+}
+
+.header{
+    border-bottom: 1px solid hsl(0deg 0% 100% / 5%);
+    height: 25px;
+    align-items: center;
+    display: flex;
+    text-align: left;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: hsl(0deg 0% 100% / 50%);
+}
+.baihat{
+    width: 50%;
+    margin-right: 257px;
+}
+.time{
+    position: relative;
+    right: 0px;
+    float: right;
+}
+
+
+.songitem{
+    cursor: pointer;
+    display: flex;
+    position: relative;
+    align-items: center;
+    display: flex;
+    text-align: left;
+    padding: 10px;
+    border-radius: 5px;
+    &:hover{
+        background-color: #2f2739;
+        z-index: 1000;
+    }
+}
+.itemleft{
+    width: 50%;
+    display: flex;
+    margin-right: 275px;
+}
+
+.img{
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    margin-right: 10px;
+    z-index: 100;
+}
+.icon{
+    display: flex;
+    margin-right: 10px;
+    justify-content: center;
+    align-items: center;
+    color: hsl(0deg 0% 100% / 50%);
+}
+.info{
+    display: flex;
+    flex-direction: column;
+}
+.name{
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+}
+.casi{
+    color: hsl(0deg 0% 100% / 50%);
+    font-size: 12px;
+}
+.timesong{
+    color: hsl(0deg 0% 100% / 50%);
+    font-size: 12px;
+}

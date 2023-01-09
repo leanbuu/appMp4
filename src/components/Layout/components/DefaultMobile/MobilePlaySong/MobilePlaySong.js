@@ -24,7 +24,7 @@ function MobilePlaySong() {
     };
   const handleAutoPlay = () => {
     handleBat(song.id + 1);
-  };
+  }
     return ( 
         <div  className={cx('playsong')}>
          <div  className={cx('song')}>

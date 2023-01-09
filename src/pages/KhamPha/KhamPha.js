@@ -16,6 +16,7 @@ import Footer from "../../components/Layout/components/Footer";
 
 import ListSliderNhacMoi from "../../components/Layout/components/ListSliderNhacMoi";
 import { dataPlaylist } from "../../dataPlaylist";
+import Header from "../../components/Layout/DefaultLayout/Header";
 
 
 const cx = classNames.bind(styles);
@@ -42,6 +43,9 @@ const SELECT = [
 function KhamPha() {
     return ( 
         <>
+          <div className={cx("container")}>
+            <Header />
+            <div className={cx("content")}>
         <div className={cx("slider")}>
                 <ListSlider />
               </div>
@@ -95,7 +99,8 @@ function KhamPha() {
                 </div>
                 <Footer />
                 </div> 
-              
+              </div>
+              </div>
             </>
      );
 }
