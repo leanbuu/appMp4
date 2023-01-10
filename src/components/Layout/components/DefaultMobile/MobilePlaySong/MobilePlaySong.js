@@ -16,7 +16,7 @@ const cx = classNames.bind(styles);
 
 function MobilePlaySong() {
     const songContext = useContext(Song);
-    const { song, xoay, handleDung,handleXoay, handlePlaySong, handleBat} = songContext;
+    const { song, xoay,bo, handleDung,handleXoay, handlePlaySong, handleBat} = songContext;
     const nen = {
         anhNen: {
             backgroundImage: `url(${song.img})`
@@ -40,7 +40,8 @@ function MobilePlaySong() {
          </div>
          <div className={cx('player')}>
          <div className={cx('playercon')}>
-         <AudioPlayer  
+         <AudioPlayer 
+          autoPlayAfterSrcChange={bo} 
           src={song.src} 
           showSkipControls={false}
           showJumpControls={true}

@@ -10,10 +10,10 @@ const cx = classNames.bind(styles);
 
 
 function ListMsongadd({items =[]}) {
-    const { song } = useContext(Song);
+    const { song, bo } = useContext(Song);
     const renderItems = () => {
         let arrFilter = 2  ? items.filter(item => {
-            return item.danhmuc === 2
+            return item.danhmuc === 2 && item.id != bo
         }) : items
         return arrFilter.map((item, index) => (
             <>

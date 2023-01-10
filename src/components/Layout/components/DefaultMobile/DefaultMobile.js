@@ -18,6 +18,8 @@ import FooterMobile from "./FooterMobie";
 import Song from "../../../../SongContext/Song";
 import { useContext, useState} from "react";
 import Msong from "./Msong/Msong";
+import MobilePlayAlbum from "./MobilePlayAlbum/MobilePlayAbum";
+import { dataPlaylist } from "../../../../dataPlaylist";
 
 const cx = classNames.bind(styles);
 const INNER = [
@@ -36,14 +38,19 @@ const INNER = [
  ]
 
 function DefaultLayout() {
-
-   const {song, dong , mo, dong1, handlePlaySong, mo1 } = useContext(Song);
+   
+   const {song, dong ,bo, mo, moadd,hat, dong1, handlePlaySong, mo1 } = useContext(Song);
+   console.log(hat)
+   console.log(bo)
     return ( 
         <div  className={cx('wrappermobi')}>
                 <div className={cx('containermobi')}>
                     <MobileHeader />
                     <div style={{display : `${mo}` }} className={`${styles.shownhac}`} >
                     <MobilePlaySong />
+                    </div>
+                    <div style={{display : `${moadd}` }} className={`${styles.shownhac}`} >
+                    <MobilePlayAlbum />
                     </div>
                     <div style={{display : `${dong}` }} className={`${styles.nghenhac}`}>    
                     <MenuInner items={INNER}></MenuInner>
@@ -57,7 +64,7 @@ function DefaultLayout() {
                         <div style={{marginTop: '20px'}}>
                             <div className={cx('contair')}>
                                 <div style={{fontSize: '18px', fontWeight:'700'}}>CUỐI TUẦN THƯ THẢ</div>
-                                <MenuMalbum></MenuMalbum>
+                                <MenuMalbum items={dataPlaylist}></MenuMalbum>
                             </div>
                             <div className={cx('contair')}>
                                 <div style={{fontSize: '18px', marginBottom: '5px', fontWeight:'700'}}>BÀI HÁT MỚI</div>
@@ -68,7 +75,7 @@ function DefaultLayout() {
                         <div style={{marginTop: '20px'}}>
                             <div className={cx('contair')}>
                                 <div style={{fontSize: '18px'}}>ALBUM HOT</div>
-                                <MenuMalbum2></MenuMalbum2>
+                                {/* <MenuMalbum2></MenuMalbum2> */}
                             </div>
                         </div>
                         <div style={{marginTop: '20px'}}>

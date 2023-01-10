@@ -2,19 +2,23 @@
 
 import classNames from "classnames/bind";
 import styles from '../Malbum/Malbum.module.scss'
-
+import { useContext} from "react";
+import PlayList from "../../../../PlayListContext/PlayList";
 
 const cx = classNames.bind(styles);
 
 
-function Malbum({img , title, artist}) {
+function Malbum({data, bien}) {
+    const playlistContext = useContext(PlayList);
+    const { handlePlayList } = playlistContext;
     return (
-      <div  className={cx('item')}>
+ 
+      <div onClick={() => handlePlayList(data.id) }  className={cx('item')}>
       <div className={cx('album')}>
-          <img className={cx('img')} alt='' src={img}></img>
+          <img className={cx('img')} alt='' src={data.img}></img>
           <div>
-              <div className={cx('title')}>{title}</div>
-              <div className={cx('artist')}>{artist}</div>
+              <div className={cx('title')}>{data.sub}</div>
+              <div className={cx('artist')}>{data.name}</div>
           </div>
       </div>
       </div>

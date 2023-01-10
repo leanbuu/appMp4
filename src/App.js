@@ -8,28 +8,35 @@ import { dataSong } from "./dataSong";
 import { dataPlaylist } from "./dataPlaylist";
 
 function App() {
+  const [hat , setHat] = useState(false)
+  const [bo, setBo] = useState(false);
   const [playlist, setPlaylist] = useState(dataPlaylist[0]);
   const [song, setSong] = useState(dataSong[0]);
   // const [isShowMenu, setIsShowMenu] = useState(false);
   const [dong1, setDong1] = useState('block')
   const [mo1, setMo1] = useState('none')
   const [mo, setMo] = useState("none");
+  const [moadd, setMoadd] = useState('none');
   const [dong, setDong] = useState('block');
+  const [dongadd, setDongadd] = useState('block');
   const [mopc, setMopc] = useState('none');
   const [ac, setAc] = useState(2);
   const [xoay, setXoay] = useState('img')
   const [moimg, setMoimg] = useState('none')
   const [album, setAlbum] = useState(1);
+  const [anlist, setAnlist] = useState('none')
   const truyen = (active) =>{
     setAc(active)
-    console.log(ac)
-    console.log(active)
   }
   const handleBat = (id) =>{
     setDong(dong === 'block' ? "none" : 'none');
     setMo(mo === "none" ? 'block' : "block");
     const newSong = dataSong.find((item) => item.id === id);
     setSong(newSong);
+  }
+  const handleBatadd = (id) =>{
+    setDongadd(dongadd === 'block' ? "none" : 'none');
+    setMoadd(moadd === "none" ? 'block' : "block");
   }
 
   const handleXoay = (id) =>{
@@ -44,7 +51,14 @@ function App() {
     const newList = dataPlaylist.find((item) => item.id === id);
     setPlaylist(newList);
     setAlbum(id);
-    
+    setMoadd(moadd === "none" ? 'block' : "none");
+    setDong(dong === 'block' ? "none" : 'block');    
+  }
+  const handlePlaySongadd = (id) => {
+    const newSong = dataSong.find((item) => item.id === id);
+    setSong(newSong);
+    setAnlist('block')
+    setHat(true)
   }
   const handlePlaySong = (id) => {
     setDong(dong === 'block' ? "none" : 'block');
@@ -53,7 +67,6 @@ function App() {
     setDong1('none');
     setMo1('block');
     const maxLength = dataSong.length;
-    // console.log("max", maxLength);
     if (id < 0) {
       setSong(dataSong[maxLength - 1]);
       return;
@@ -64,11 +77,8 @@ function App() {
     }
     const newSong = dataSong.find((item) => item.id === id);
     setSong(newSong);
+    setBo(true)
   };
-
-  // const upDateStateMenu = (value) => {
-  //   setIsShowMenu(value);
-  // };
 
   return (
     <Router>
@@ -89,6 +99,12 @@ function App() {
                 element={
                   <Song.Provider
                     value={{
+                      bo,
+                      anlist,
+                      hat,
+                      handlePlaySongadd,
+                      handleBatadd,
+                      moadd,
                       album,
                       moimg,
                       dong1,

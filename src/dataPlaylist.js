@@ -18,15 +18,15 @@ export const dataPlaylist=[
         id: 2,
         img: img2,
         name: 'AMEE', 
-        sub:'Ở Đây Có Nhạc Của AMEE Và Tận Hưởng Âm Nhạc Hồn Nhiên Này',
+        sub:'Ở Đây Có Nhạc Của AMEE Và Tận Hưởng...',
         to: '/theodoi'
   
     },
     {
         id: 3,
         img: img3,
-        name: 'Hoàng Thùy Linh', 
-        sub:'Hoàng Thùy Linh và những bản Hit quốc dân như...',
+        name: 'VŨ', 
+        sub:'Vũ và những bản Hit quốc dân như...',
         to: '/theodoi'
 
     },
