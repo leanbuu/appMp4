@@ -52,7 +52,8 @@ function App() {
     setPlaylist(newList);
     setAlbum(id);
     setMoadd(moadd === "none" ? 'block' : "none");
-    setDong(dong === 'block' ? "none" : 'block');    
+    setDong(dong === 'block' ? "none" : 'block'); 
+    setHat(false)   
   }
   const handlePlaySongadd = (id) => {
     const newSong = dataSong.find((item) => item.id === id);
@@ -77,7 +78,7 @@ function App() {
     }
     const newSong = dataSong.find((item) => item.id === id);
     setSong(newSong);
-    setBo(true)
+    setBo(bo === true ? false : true)
   };
 
   return (

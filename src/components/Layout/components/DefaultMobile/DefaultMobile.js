@@ -18,7 +18,7 @@ import FooterMobile from "./FooterMobie";
 import Song from "../../../../SongContext/Song";
 import { useContext, useState} from "react";
 import Msong from "./Msong/Msong";
-import MobilePlayAlbum from "./MobilePlayAlbum/MobilePlayAbum";
+import MobilePlayAlbum from "./MobilePlayAlbum/MobilePlayAlbum";
 import { dataPlaylist } from "../../../../dataPlaylist";
 
 const cx = classNames.bind(styles);

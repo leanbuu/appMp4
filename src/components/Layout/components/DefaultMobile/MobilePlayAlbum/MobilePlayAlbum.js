@@ -1,14 +1,12 @@
-
 import classNames from "classnames/bind";
 import styles from '../MobilePlayAlbum/MobilePlayAlbum.module.scss'
 import AudioPlayer from "react-h5-audio-player";
 import "react-h5-audio-player/lib/styles.css";
-import { useContext, useEffect, useState} from "react";
+import { useContext} from "react";
 import "react-h5-audio-player/lib/styles.css";
 import Song from "../../../../../SongContext/Song";
 import '../custom.css'
 import { dataSong } from "../../../../../dataSong";
-import ListMsongadd from "../ListMsongadd";
 import PlayList from "../../../../../PlayListContext/PlayList";
 import ListMsonglist from "../ListMsonglist";
 
