@@ -11,15 +11,15 @@ import MenuMalbum from "../MenuMalbum";
 import ListMsong from "./ListMsong";
 import { dataSong } from "../../../../dataSong";
 import "react-h5-audio-player/lib/styles.css"; 
-import MenuMalbum2 from "../MenuMalbum2";
 import ListMovie from '../ListMovie'
 import MobilePlaySong from "./MobilePlaySong/MobilePlaySong";
 import FooterMobile from "./FooterMobie";
 import Song from "../../../../SongContext/Song";
-import { useContext, useState} from "react";
+import { useContext, useEffect, useState} from "react";
 import Msong from "./Msong/Msong";
 import MobilePlayAlbum from "./MobilePlayAlbum/MobilePlayAlbum";
 import { dataPlaylist } from "../../../../dataPlaylist";
+import PlayList from "../../../../PlayListContext/PlayList";
 
 const cx = classNames.bind(styles);
 const INNER = [
@@ -37,11 +37,26 @@ const INNER = [
     }
  ]
 
+
 function DefaultLayout() {
+
+   const {song, dong ,onlist, mo, moadd, dong1,mo2, handlePlaySong, mo1 } = useContext(Song);
+   const {handlePlayList, playlist } = useContext(PlayList);
+   console.log(onlist)
+   const [fix, setFix]= useState('none');
    
-   const {song, dong ,bo, mo, moadd,hat, dong1, handlePlaySong, mo1 } = useContext(Song);
-   console.log(hat)
-   console.log(bo)
+   useEffect(() =>{
+      if(playlist.id === onlist){
+        setFix(mo2)
+      }  
+      else if(song.album === onlist){
+        setFix(mo2)
+      }
+      else
+      {
+        setFix('none')
+      }
+   },[playlist.id, onlist, mo2, song.album]) 
     return ( 
         <div  className={cx('wrappermobi')}>
                 <div className={cx('containermobi')}>
@@ -50,7 +65,7 @@ function DefaultLayout() {
                     <MobilePlaySong />
                     </div>
                     <div style={{display : `${moadd}` }} className={`${styles.shownhac}`} >
-                    <MobilePlayAlbum />
+                    <MobilePlayAlbum active={onlist} />
                     </div>
                     <div style={{display : `${dong}` }} className={`${styles.nghenhac}`}>    
                     <MenuInner items={INNER}></MenuInner>
@@ -68,7 +83,9 @@ function DefaultLayout() {
                             </div>
                             <div className={cx('contair')}>
                                 <div style={{fontSize: '18px', marginBottom: '5px', fontWeight:'700'}}>BÀI HÁT MỚI</div>
+                                <div className={cx('boc')}>
                                 <ListMsong con={<Msong  />} items={dataSong}></ListMsong>
+                                </div>
                             </div>
                         </div>
                        
@@ -85,6 +102,15 @@ function DefaultLayout() {
                             </div>
                         </div>
                        
+                    </div>
+                    <div  onClick={() => handlePlayList(onlist)} style={{display : `${fix}` }} className={cx('thanhplayalbum')}>
+                      <div className={cx('content')}>
+                        <div className={cx('playti')}><div className={cx('span')}>Bài Hát Đang Phát:</div></div>
+                      <div className={cx('bocimg')}>
+                      <img className={cx('imgplay')} src={song.img} alt=''></img> 
+                      </div>
+                      <div className={cx('playname')}><div className={cx('span')}>{song.name}</div></div>
+                      </div>
                     </div>
                     <div  onClick={() => handlePlaySong(song.id)} style={{display : `${mo1}` }} className={cx('thanhplay')}>
                       <div className={cx('content')}>

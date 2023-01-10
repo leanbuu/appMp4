@@ -8,13 +8,16 @@ import { dataSong } from "./dataSong";
 import { dataPlaylist } from "./dataPlaylist";
 
 function App() {
+  const [onlist, setOnlist] = useState(0)
   const [hat , setHat] = useState(false)
   const [bo, setBo] = useState(false);
+  const [list , setList] = useState(0);
+  const [songing , setSonging] = useState(0);
   const [playlist, setPlaylist] = useState(dataPlaylist[0]);
   const [song, setSong] = useState(dataSong[0]);
-  // const [isShowMenu, setIsShowMenu] = useState(false);
   const [dong1, setDong1] = useState('block')
   const [mo1, setMo1] = useState('none')
+  const [mo2, setMo2] = useState('none')
   const [mo, setMo] = useState("none");
   const [moadd, setMoadd] = useState('none');
   const [dong, setDong] = useState('block');
@@ -48,18 +51,23 @@ function App() {
     setMoimg(moimg === 'block' ? 'none' :'none')
   }
   const handlePlayList = (id) =>{
-    const newList = dataPlaylist.find((item) => item.id === id);
-    setPlaylist(newList);
-    setAlbum(id);
     setMoadd(moadd === "none" ? 'block' : "none");
     setDong(dong === 'block' ? "none" : 'block'); 
-    setHat(false)   
+    setHat(false)
+    setMo2('block');
+    setAlbum(id);
+    const newList = dataPlaylist.find((item) => item.id === id);
+    setPlaylist(newList);
+    
   }
-  const handlePlaySongadd = (id) => {
+  const handlePlaySongadd = (id , album) => {
     const newSong = dataSong.find((item) => item.id === id);
     setSong(newSong);
     setAnlist('block')
     setHat(true)
+    setList(id)
+    setOnlist(album);
+    setDong1('none')
   }
   const handlePlaySong = (id) => {
     setDong(dong === 'block' ? "none" : 'block');
@@ -67,6 +75,7 @@ function App() {
     setMopc('block')
     setDong1('none');
     setMo1('block');
+    setMo2('none')
     const maxLength = dataSong.length;
     if (id < 0) {
       setSong(dataSong[maxLength - 1]);
@@ -79,6 +88,9 @@ function App() {
     const newSong = dataSong.find((item) => item.id === id);
     setSong(newSong);
     setBo(bo === true ? false : true)
+    setSonging(id)
+    setAnlist('none');
+    setXoay('img')
   };
 
   return (
@@ -100,6 +112,9 @@ function App() {
                 element={
                   <Song.Provider
                     value={{
+                      onlist,
+                      songing,
+                      list,
                       bo,
                       anlist,
                       hat,
@@ -110,6 +125,7 @@ function App() {
                       moimg,
                       dong1,
                       mo1,
+                      mo2,
                       handleDung,
                       xoay, 
                       handleXoay,
@@ -128,6 +144,7 @@ function App() {
                   >
                   <PlayList.Provider
                    value={{
+                    onlist,
                     album,
                     handlePlayList,
                     playlist,

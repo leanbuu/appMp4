@@ -19,7 +19,7 @@ export const dataSong=[
         casi: 'AMEE',
         time: '4p18',
         danhmuc: 2,
-        src: 'https://stream.nixcdn.com/NhacCuaTui991/TroiGiauTroiMangDi-AMeeViruSs-6119373.mp3?st=NcPk_dVJ7r5NAqiEUF8rgA&e=1672664006&t=1672577626246'    
+        src: 'https://data.chiasenhac.com/down2/2216/2/2215229-ca976f4d/128/Troi%20Giau%20Troi%20Mang%20Di%20-%20AMee_%20Viruss.mp3'    
     },
     {   
         id: 3,
@@ -27,9 +27,9 @@ export const dataSong=[
         img: 'https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_webp/cover/f/a/3/4/fa34528cd48fc5a941273e74e9dfbc2e.jpg',
         name: 'Sao Anh Chưa Về Nhà',
         casi: ' AMEE, Hoàng Dũng',
-        time: '4p06',
+        time: '4p09',
         danhmuc: 2,
-        src: 'https://stream.nixcdn.com/NhacCuaTui2028/SaoAnhChuaVeNha-AMEEHoangDungTheVoice-7983037.mp3?st=-zKFvbGqgWey_i-lsmaqMA&e=1672886355&t=1672799989230'
+        src: 'https://data16.chiasenhac.com/downloads/2140/2/2139729-2a46c417/128/Sao%20Anh%20Chua%20Ve%20Nha%20-%20AMee_%20Hoang%20Dung_.mp3'
     },
     {   
         id: 4,

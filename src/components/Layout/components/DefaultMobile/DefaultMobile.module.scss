@@ -66,7 +66,7 @@
     background-image: linear-gradient(-90deg,#4d4ea0,#efadb1);
     border: solid 0px transparent;
     border-radius: 30px;
-    bottom: 10px;
+    bottom: 12px;
     color: #fff;
     font-size: 14px;
     height: 50px;
@@ -75,7 +75,24 @@
     position: fixed;
     text-align: center;
     width: 90%;
-    z-index: 200;
+    z-index: 5000;
+}
+.thanhplayalbum{
+    padding: 0px 2%;
+    display: flex;
+    background-color: #fcfcfc;
+    border: solid 2px #32323d;
+    border-radius: 30px;
+    bottom: 10px;
+    color: #000;
+    font-size: 14px;
+    font-weight: 700;
+    height: 50px;
+    left: 4.5%;
+    position: fixed;
+    text-align: center;
+    width: 86%;
+    z-index: 3001;
 }
 .thanhplay{
     padding: 0px 2%;
@@ -92,7 +109,7 @@
     position: fixed;
     text-align: center;
     width: 86%;
-    z-index: 200;
+    z-index: 3000;
 }
 .content{
     width: 100%;
@@ -277,4 +294,8 @@
     border: solid 1px #32323d;
     font-size: 17px;
     font-weight: 700;
+}
+.boc{
+    height: 600px;
+    overflow: hidden;
 }

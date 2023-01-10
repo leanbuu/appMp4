@@ -3,7 +3,7 @@
 import classNames from "classnames/bind";
 import styles from '../Malbum/Malbum.module.scss'
 import { useContext} from "react";
-import PlayList from "../../../../PlayListContext/PlayList";
+import PlayList from "../../../../../PlayListContext/PlayList";
 
 const cx = classNames.bind(styles);
 

@@ -10,10 +10,10 @@ const cx = classNames.bind(styles);
 
 
 function ListMsong({items =[]}) {
-    const { song } = useContext(Song);
+    const { song, list } = useContext(Song);
     const renderItems = () => {
         let arrFilter = 2  ? items.filter(item => {
-            return item.danhmuc === 2
+            return item.danhmuc === 2 && item.id !== list
         }) : items
         return arrFilter.map((item, index) => (
             <>

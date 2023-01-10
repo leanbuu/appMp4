@@ -13,11 +13,9 @@ function Msonglist({data, bien}) {
     let active = bien;
     const songContext = useContext(Song);
     const { handlePlaySongadd, moimg } = songContext;
-    const playlistContext = useContext(Song);
-    const { handlePlayList } = playlistContext;
     
     return ( 
-        <div  onClick={() => handlePlaySongadd(data.id) } className={`${styles.item} ${data?.id === active ?styles.active:""}`}>
+        <div  onClick={() => handlePlaySongadd(data.id, data.album) } className={`${styles.item} ${data?.id === active ?styles.active:""}`}>
         <div className={cx('imgtong')}>
         <div style={{display : `${moimg}` }}   className={`${styles.img} ${data?.id === active ?styles.active:""}`}>
            <div className={cx('i')}></div>

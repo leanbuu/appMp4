@@ -1,14 +1,16 @@
 
 import classNames from "classnames/bind";
 import styles from '../MenuMalbum/MenuMalbum.module.scss';
-import Malbum from "../Malbum/Malbum";
+
 
 
 import { useState } from "react";
+import Malbum from "../DefaultMobile/Malbum/Malbum";
 
 const cx = classNames.bind(styles);
 
 function MenuMalbum({items = []}) {
+  // eslint-disable-next-line
     const [active, setActive] = useState(1);
     const renderItems = () => {
         
