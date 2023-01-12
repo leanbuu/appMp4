@@ -46,7 +46,7 @@ function KhamPha() {
           <div className={cx("container")}>
             <Header />
             <div className={cx("content")}>
-        <div className={cx("slider")}>
+            <div className={cx("slider")}>
                 <ListSlider />
               </div>
 

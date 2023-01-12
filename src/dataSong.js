@@ -14,12 +14,12 @@ export const dataSong=[
     {   
         id: 2,
         album: 2,
-        img: 'https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_webp/cover/9/d/9/6/9d9648688a40aecb85f8b70ebe21e82e.jpg',
-        name: 'Trời Giấu Trời Mang Đi',
-        casi: 'AMEE',
+        img: 'https://avatar-ex-swe.nixcdn.com/song/2020/02/11/d/4/5/a/1581406608326_500.jpg',
+        name: 'Do For Love',
+        casi: 'AMEE, Bray',
         time: '4p18',
         danhmuc: 2,
-        src: 'https://data.chiasenhac.com/down2/2216/2/2215229-ca976f4d/128/Troi%20Giau%20Troi%20Mang%20Di%20-%20AMee_%20Viruss.mp3'    
+        src: 'https://stream.nixcdn.com/NhacCuaTui995/DoForLove-AMeeBRay-6221980.mp3?st=9O-EXO_SGV6Tw6l4Kl2OwQ&e=1673506594&t=1673420252526'    
     },
     {   
         id: 3,
@@ -239,5 +239,16 @@ export const dataSong=[
         danhmuc: 2,
         src: 'https://stream.nixcdn.com/NhacCuaTui2032/NguMotMinhtinhRatTinh-HIEUTHUHAINegavKewtiie-8397765.mp3?st=uAoYeWtECkk0_X0KiJHm3w&e=1673083507&t=1672997108391'    
     },
+    {   
+        id: 26,
+        album: 1,
+        img: 'https://i.ytimg.com/vi_webp/Ws-QlpSltr8/sddefault.webp',
+        name: 'Trốn Tìm',
+        casi: ' Đen',
+        time: '4p08',
+        danhmuc: 2,
+        src: 'https://data.chiasenhac.com/down2/2172/3/2171043-de949f5d/128/Tron%20Tim%20-%20Den_%20MTV%20Band.mp3'    
+    },
+    
     
 ];

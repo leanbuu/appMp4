@@ -2,7 +2,7 @@ const routes   = {
     canhan: '/canhan',
     khampha: '/',
     zing: '/zing',
-    radio: '/radio',
+    mv: '/mv',
     theodoi: '/theodoi',
 };
 

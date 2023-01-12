@@ -58,7 +58,6 @@ function App() {
     setAlbum(id);
     const newList = dataPlaylist.find((item) => item.id === id);
     setPlaylist(newList);
-    
   }
   const handlePlaySongadd = (id , album) => {
     const newSong = dataSong.find((item) => item.id === id);
@@ -77,14 +76,7 @@ function App() {
     setMo1('block');
     setMo2('none')
     const maxLength = dataSong.length;
-    if (id < 0) {
-      setSong(dataSong[maxLength - 1]);
-      return;
-    }
-    if (id > maxLength - 1) {
-      setSong(dataSong[0]);
-      return;
-    }
+    console.log(maxLength)
     const newSong = dataSong.find((item) => item.id === id);
     setSong(newSong);
     setBo(bo === true ? false : true)

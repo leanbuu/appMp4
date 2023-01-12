@@ -1,23 +1,24 @@
-import BgNen from "../../components/Layout/components/BgNen/BgNen";
+
 
 import classNames from "classnames/bind";
-import styles from "../Radio/Radio.module.scss";
+import styles from "./MV.module.scss";
 import Header from "../../components/Layout/DefaultLayout/Header";
+import Youtube from "../../components/Layout/components/Youtube/Youtube";
 
 const cx = classNames.bind(styles);
 
-function Radio() {
+function MV() {
     return ( 
       
         <div>
          <div className={cx("container")}>
             <Header />
-            <div className={cx("content")}>
-           <BgNen />
+            <div className={cx("content")}>   
+           <Youtube />
            </div>
            </div>
         </div>
      );
 }
 
-export default Radio;
+export default MV;

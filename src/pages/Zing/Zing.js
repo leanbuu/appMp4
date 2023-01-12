@@ -4,7 +4,7 @@ import styles from '../Zing/Zing.module.scss';
 import BgNen from "../../components/Layout/components/BgNen/BgNen";
 import ListZing from "../../components/Layout/ListZing/ListZing";
 import { dataSong } from "../../dataSong";
-import { useState, useContext } from "react";
+import { useContext } from "react";
 import MenuSelectall from "../../components/Layout/components/MenuSelectall";
 import Song from "../../SongContext/Song";
 import Header from "../../components/Layout/DefaultLayout/Header";

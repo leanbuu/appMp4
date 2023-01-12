@@ -1,7 +1,7 @@
 
 
 import classNames from "classnames/bind";
-import styles from '../Malbum/Malbum.module.scss'
+import styles from './Malbum.module.scss'
 import { useContext} from "react";
 import PlayList from "../../../../../PlayListContext/PlayList";
 

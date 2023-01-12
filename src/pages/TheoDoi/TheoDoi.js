@@ -27,7 +27,7 @@ function TheoDoi() {
       }else{
          return setBien('img')
       }
-   })
+   }, [playlist.id, song.album, xoay])
    
 
     return ( 
