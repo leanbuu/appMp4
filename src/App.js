@@ -28,6 +28,7 @@ function App() {
   const [moimg, setMoimg] = useState('none')
   const [album, setAlbum] = useState(1);
   const [anlist, setAnlist] = useState('none')
+  const [chuyen , setChuyen] = useState(0)
   const truyen = (active) =>{
     setAc(active)
   }
@@ -68,12 +69,24 @@ function App() {
     setOnlist(album);
     setDong1('none')
   }
+  const handleChuyen = (id) =>{
+    if(id === 2 ){
+    setDong(dong === 'block' ? "none" : 'block');
+    setMo(mo === "none" ? 'block' : "none");
+    setChuyen(id)
+    setMo1('none')
+    }
+  }
   const handlePlaySong = (id) => {
+    if(id < 2){
+      setMo1('none')
+     }else{
+      setMo1('block')
+     }
     setDong(dong === 'block' ? "none" : 'block');
     setMo(mo === "none" ? 'block' : "none");
     setMopc('block')
     setDong1('none');
-    setMo1('block');
     setMo2('none')
     const maxLength = dataSong.length;
     console.log(maxLength)
@@ -104,6 +117,8 @@ function App() {
                 element={
                   <Song.Provider
                     value={{
+                      chuyen,
+                      handleChuyen,
                       onlist,
                       songing,
                       list,

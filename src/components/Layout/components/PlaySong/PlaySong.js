@@ -16,22 +16,20 @@ import { useContext} from "react";
 const cx = classNames.bind(styles);
 
 function PlaySong( ) {
- 
+  
   const { xoay, mopc ,song, handlePlaySong, handleXoay, handleDung } = useContext(Song);
-  // const [volumeText, setVolumeText] = useState("100%");
   const handlePrev = () => {
     handlePlaySong(song.id - 1);
   };
   const handleNext = () => {
-    handlePlaySong(song.id + 1);
+    if(song.danhmuc === 2){
+        handlePlaySong(song.id +1);
+      }
   };
 
   const handleAutoPlay = () => {
     handlePlaySong(song.id + 1);
   };
-  const handlePause = () => {
-    handleDung(song.id);
-  }
   return (
     <>
       

@@ -3,7 +3,7 @@ import classNames from "classnames/bind";
 import styles from '../MobilePlaySong/MobilePlaySong.module.scss'
 import AudioPlayer from "react-h5-audio-player";
 import "react-h5-audio-player/lib/styles.css";
-import { useContext} from "react";
+import { useContext, useEffect, useState} from "react";
 import "react-h5-audio-player/lib/styles.css";
 import Song from "../../../../../SongContext/Song";
 import '../custom.css'
@@ -16,7 +16,7 @@ const cx = classNames.bind(styles);
 
 function MobilePlaySong() {
     const songContext = useContext(Song);
-    const { song, xoay,bo, handleDung,handleXoay, handlePlaySong, handleBat} = songContext;
+    const { song,list, xoay,bo, handleDung,handleXoay, handlePlaySong, handleBat} = songContext;
     const nen = {
         anhNen: {
             backgroundImage: `url(${song.img})`
@@ -25,8 +25,25 @@ function MobilePlaySong() {
   const handleAutoPlay = () => {
     handleBat(song.id + 1);
   }
+  const [thongbao, setThongbao] = useState('block')
+  const [hat , setHat] = useState('none')
+  useEffect(() => {
+    if(song.id >= 2 && song.id !== list){
+        setThongbao('none')
+        setHat('block')
+    }
+    
+  },[song.id, list])
     return ( 
         <div  className={cx('playsong')}>
+        <div style={{display : `${thongbao}` }} className={cx('thongbao')}>
+            <span className={cx('span')}>
+           Chào Mừng Bạn Đến Với Danh Sách Nhạc, Vui Lòng Chọn Nhạc!
+           </span>
+        </div>
+
+
+        <div style={{display : `${hat}` }}>
          <div  className={cx('song')}>
             <div style={nen.anhNen} className={cx('nenanh')}></div>
             <div className={cx('info')}>
@@ -51,6 +68,7 @@ function MobilePlaySong() {
           customVolumeControls={[]}
           customAdditionalControls={[]} 
           />
+          </div>
           </div>
           </div>
           <button onClick={() => handlePlaySong(song.id)} className={cx('btnback')}>TRỞ LẠI</button>

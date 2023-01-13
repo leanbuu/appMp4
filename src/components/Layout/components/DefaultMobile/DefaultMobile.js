@@ -40,9 +40,9 @@ const INNER = [
 
 function DefaultLayout() {
 
-   const {song, dong ,onlist, mo, moadd, dong1,mo2, handlePlaySong, mo1 } = useContext(Song);
+   const { chuyen ,song, dong ,onlist, mo, moadd, dong1,mo2, handlePlaySong, mo1 } = useContext(Song);
    const {handlePlayList, playlist } = useContext(PlayList);
-   console.log(onlist)
+   console.log(chuyen)
    const [fix, setFix]= useState('none');
    
    useEffect(() =>{
