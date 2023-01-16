@@ -17,43 +17,50 @@
     border-radius: 20px;
     width: 50%;
     height: 40px;
-    background-color: var(--alpha-bg);
     margin-right: 128px;
     margin-left: 25%;
     margin-top: 10px;
+    text-align: center;
+}
+.title{
+    color: #fff;
 }
 
-.input{
-    position: absolute;
-    top: 0;
-    left: 38px;
-    right: 10px;
-    bottom: 0;
-    border: 1.5px solid transparent;
-    input {
-        flex: 1;
-        color: var(--white);
-        font-size: 14px;
-        caret-color: var(--white);
-        background-color: transparent;
-    }
-    input:focus {
-        outline: none;
-     }
-
-}
 
 .input-text{
-    margin: 0;
-    display: inline-block;
-    width: 95%;
-    border: 0;
+    background-color: #363041;
     position: relative;
-    font-size: 18px;
-    height: 34px;
-    line-height: 34px;
-    background-color: transparent;
-
+    width: 20px;
+    height: 20px;
+    border-radius: 22px;
+    padding: 10px;
+    transition-duration: 500ms;
+    cursor: pointer;
+    font-size: 15px;
+    border: 1px solid white;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: 22px;
+    background-position: 45% 50%;
+    background-image: url(../../../../assets/search-icon.svg);
+    :hover{
+        border: 1px solid #FF9950;
+    }
+}
+.input-text:focus {
+    cursor: pointer;
+        padding-left:40px ;
+        width: 400px;
+        height: 20px;
+        cursor: text;
+        border-radius: 22px;
+        color: #fff;
+        outline: none;
+        background-color: transparent;
+        border: 1px solid #fff;
+        background: url(../../../../assets/search-icon.svg) no-repeat;
+        background-size: 22px;
+        background-position: 10px 50%;
 }
 .search-btn{
     background-color: transparent;

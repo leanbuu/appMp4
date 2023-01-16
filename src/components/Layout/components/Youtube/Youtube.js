@@ -64,18 +64,17 @@ const Youtube = () => {
   return (
     <div className={cx('youtube')}>
       <div className={cx('search')}>
+        <div className={cx('title')}>
+        Tìm Kiếm MV
+        </div>
         <div className={cx('input')}>
         <input className={cx("input-text")}
           type='text'
           value={query}
           onChange={(e) => setQuery(e.target.value)}
-          placeholder="Tìm Kiếm MV Yêu Thích"
           onKeyDown={handleKey}
         />
         </div>
-        <button className={cx("search-btn")} onClick={handleSearch}>
-          <SearchIcon></SearchIcon>
-        </button>
       </div>
 
       {/**Result */}
