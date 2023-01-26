@@ -97,7 +97,7 @@ function Mvmobile() {
                 {/**left */}
                 <div className={cx('left')}>
                   
-                  <iframe style={{border: '0px solid transparent', borderRadius: '10px'}}
+                  <iframe style={{border: '0px solid transparent', borderRadius: '10px', width: '100%', height: '190px'}}
                     className={cx("if")}
                     src={`https://www.youtube.com/embed/${item.id.videoId}`}
                     title="YouTube video player"
@@ -113,13 +113,6 @@ function Mvmobile() {
                       {item.snippet.title}
                   </div>
                   {/**create at */}
-                  <div>
-                    <span className={cx('sub')}>
-                      {moment(item.snippet.publishTime).format(
-                        "YYYY-MM-DD HH:mm:ss"
-                      )}
-                    </span>
-                  </div>
                   {/**author */}
                   <div className={cx('tacgia')}>
                     <img
@@ -134,11 +127,6 @@ function Mvmobile() {
                     </div>
                   </div>
                   {/**description */}
-                  <div>
-                    <div className={cx('mota')}>
-                      {item.snippet.description}
-                    </div>
-                  </div>
                 </div>
               </div>
             ))}
