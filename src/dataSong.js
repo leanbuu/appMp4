@@ -12,16 +12,6 @@ export const dataSong=[
         src: 'https://cdn.discordapp.com/attachments/775740994595323954/775741536591806484/Alan_Walker_-_Fade_NCS_ReleaseMP3_160K.mp3'    
     },
     {   
-        id: 2,
-        album: 2,
-        img: 'https://avatar-ex-swe.nixcdn.com/song/2020/02/11/d/4/5/a/1581406608326_500.jpg',
-        name: 'Do For Love',
-        casi: 'AMEE, Bray',
-        time: '4p18',
-        danhmuc: 2,
-        src: 'https://stream.nixcdn.com/NhacCuaTui995/DoForLove-AMeeBRay-6221980.mp3?st=9O-EXO_SGV6Tw6l4Kl2OwQ&e=1673506594&t=1673420252526'    
-    },
-    {   
         id: 3,
         album: 2,
         img: 'https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_webp/cover/f/a/3/4/fa34528cd48fc5a941273e74e9dfbc2e.jpg',
@@ -29,7 +19,7 @@ export const dataSong=[
         casi: ' AMEE, Hoàng Dũng',
         time: '4p09',
         danhmuc: 2,
-        src: 'https://data16.chiasenhac.com/downloads/2140/2/2139729-2a46c417/128/Sao%20Anh%20Chua%20Ve%20Nha%20-%20AMee_%20Hoang%20Dung_.mp3'
+        src: 'https://vnno-pt-1-tf-mp3-s1-zmp3.zmdcdn.me/7f62af55b6125f4c0603/27793806106737670?authen=exp=1674874959~acl=/7f62af55b6125f4c0603/*~hmac=5890516b684a072231bf0643b75cf1c2&fs=MTY3NDmUsICwMjE1OTI1N3x3ZWJWNnwwfDExMy4xODUdUngNzgdUngMjU1'
     },
     {   
         id: 4,
@@ -39,26 +29,26 @@ export const dataSong=[
         casi: 'AMME, HIEUTHUHAI',
         time: '2p12',
         danhmuc: 2,
-        src: 'https://stream.nixcdn.com/NhacCuaTui1021/DenDaKhongDuongRapVersion-AMEEHIEUTHUHAI-7083987.mp3?st=wKVqgQQCdVWG2KkELczevQ&e=1672380740&t=1672294423459'    
+        src: 'https://vnno-pt-1-tf-mp3-s1-zmp3.zmdcdn.me/e17c319e19d9f087a9c8/2991697851525263558?authen=exp=1674875032~acl=/e17c319e19d9f087a9c8/*~hmac=b6ce21891c614778d4987952fa5f7eeb&fs=MTY3NDmUsICwMjIzMjI4N3x3ZWJWNnwwfDExMy4xODUdUngNzgdUngMjU1'    
     },
     {   
         id: 5,
         img: 'data:image/jpeg;base64,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',
         name: 'Bao Tiền Một Mớ Bình Yên?',
         casi: ' 14 Casper',
-        time: '4p41c',
+        time: '5p',
         danhmuc: 2,
-        src: 'https://stream.nixcdn.com/NhacCuaTui1013/BaoTienMotMoBinhYenLofiVersion-14CasperBonFreakD-6982202.mp3?st=RvpSoF6irpPX8dKxAhglwQ&e=1672663760&t=1672577462806'    
+        src: 'https://vnno-vn-6-tf-mp3-s1-zmp3.zmdcdn.me/d80ca7683a2fd3718a3e/202014890748971286?authen=exp=1674874788~acl=/d80ca7683a2fd3718a3e/*~hmac=22889278246d1740f327c3b0b0f5d550&fs=MTY3NDmUsICwMTk4ODkxMnx3ZWJWNnwwfDExMi4xMDkdUngODgdUngNDY'    
     },
     {   
         id: 6,
         album: 3,
-        img: 'https://avatar-ex-swe.nixcdn.com/song/2021/11/19/6/d/9/1/1637317177185.jpg',
-        name: 'Bước Qua Nhau',
-        casi: ' Vũ',
-        time: '4p17',
+        img: 'https://avatar-ex-swe.nixcdn.com/playlist/2019/08/01/5/d/8/2/1564663193747_500.jpg',
+        name: 'vaicaunoicokhiennguoithaydoi',
+        casi: ' GREY D',
+        time: '3p46',
         danhmuc: 2,
-        src: 'https://stream.nixcdn.com/Warner_Audio86/BuocQuaNhau-Vu-7847964.mp3?st=aIczUCGXPCptmNBGvi7qpQ&e=1672381128&t=1672294844649s'    
+        src: 'https://vnno-vn-6-tf-mp3-s1-zmp3.zmdcdn.me/55226a6e9c2f75712c3e/3766125175965205028?authen=exp=1674874831~acl=/55226a6e9c2f75712c3e/*~hmac=3104704de98c34aa95ad406a80b6997f&fs=MTY3NDmUsICwMjAzMTEyMnx3ZWJWNnwwfDI3LjMdUngMjI1LjI0NQ'    
     },
     {   
         id: 7,
@@ -132,7 +122,7 @@ export const dataSong=[
         casi: ' Sơn Tùng M-TP',
         time: '4p08',
         danhmuc: 2,
-        src: 'https://stream.nixcdn.com/NhacCuaTui964/ChayNgayDi-SonTungMTP-5468704.mp3?st=BNFd6x48hKMTFRvXfZV0LQ&e=1672931496&t=1672845323480'    
+        src: 'https://vnno-vn-6-tf-mp3-s1-zmp3.zmdcdn.me/4480ef703f34d66a8f25/2437095196596911444?authen=exp=1674874180~acl=/4480ef703f34d66a8f25/*~hmac=84c52875b70657e08a99cb383e62c42c&fs=MTY3NDmUsICwMTM4MDAwMnx3ZWJWNnwwfDExMy4xNjYdUngMTI2LjE0MQ'    
     },
     {   
         id: 15,
@@ -192,7 +182,7 @@ export const dataSong=[
         casi: 'Tăng Duy Tân',
         time: '3p04',
         danhmuc: 2,
-        src: 'https://stream.nixcdn.com/NhacCuaTui2022/BenTrenTangLau-TangDuyTan-7412012.mp3?st=n3EG3jQgIkjLWo7upTQPOQ&e=1673009763&t=1672923450815'    
+        src: 'https://vnno-vn-6-tf-mp3-s1-zmp3.zmdcdn.me/ddb4cae628a7c1f998b6/6353349108568264070?authen=exp=1674875665~acl=/ddb4cae628a7c1f998b6/*~hmac=caecff6df90478bbca5f2c18ffdb14c3&fs=MTY3NDmUsICwMjg2NTA4MXx3ZWJWNnwwfDExMy4xODUdUngNzgdUngMjU1'    
     },
     {   
         id: 21,

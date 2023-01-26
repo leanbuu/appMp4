@@ -20,6 +20,7 @@ import Msong from "./Msong/Msong";
 import MobilePlayAlbum from "./MobilePlayAlbum/MobilePlayAlbum";
 import { dataPlaylist } from "../../../../dataPlaylist";
 import PlayList from "../../../../PlayListContext/PlayList";
+import Mvmobile from "./Mvmobile/Mvmobile";
 
 const cx = classNames.bind(styles);
 const INNER = [
@@ -33,14 +34,14 @@ const INNER = [
     },
     {
         id: 3,
-        name: 'NHẠC CÁ NHÂN'
+        name: 'MV MỚI NHẤT'
     }
  ]
 
 
 function DefaultLayout() {
 
-   const { chuyen ,song, dong ,onlist, mo, moadd, dong1,mo2, handlePlaySong, mo1 } = useContext(Song);
+   const { chuyen ,song,momv, dong ,onlist, mo, moadd, dong1,mo2, handlePlaySong, mo1 } = useContext(Song);
    const {handlePlayList, playlist } = useContext(PlayList);
    console.log(chuyen)
    const [fix, setFix]= useState('none');
@@ -63,6 +64,9 @@ function DefaultLayout() {
                     <MobileHeader />
                     <div style={{display : `${mo}` }} className={`${styles.shownhac}`} >
                     <MobilePlaySong />
+                    </div>
+                    <div style={{display : `${momv}` }}>
+                      <Mvmobile />
                     </div>
                     <div style={{display : `${moadd}` }} className={`${styles.shownhac}`} >
                     <MobilePlayAlbum active={onlist} />

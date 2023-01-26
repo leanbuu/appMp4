@@ -1,12 +1,9 @@
-import React, { useEffect, useState } from "react";
-import { useNavigate } from "react-router";
-import { AiOutlineSearch } from "react-icons/ai";
+import React, { useState } from "react";
 import axios from "axios";
 import moment from "moment";
-import useGetData from "../custom/fetch";
 import classNames from "classnames/bind";
 import styles from '../Youtube/Youtube.module.scss';
-import { SearchIcon } from "../Icons/Icons";
+
 
 
 
@@ -16,10 +13,13 @@ const cx = classNames.bind(styles);
 
 const Youtube = () => {
 
-  const navigation = useNavigate();
   const [query, setQuery] = useState("");
   const [dataVideo, setDataVideo] = useState([]);
   const [isCall, setIsCall] = useState(false);
+  const [show, setShow] = useState('show');
+  const  handleShow = () =>{
+      setShow(show === 'show' ? 'showing' : 'show');
+  }
   const handleSearch = async () => {
     let res = await axios({
       method: "GET",
@@ -65,10 +65,10 @@ const Youtube = () => {
     <div className={cx('youtube')}>
       <div className={cx('search')}>
         <div className={cx('title')}>
-        Tìm Kiếm MV
+          Tìm Kiếm MV
         </div>
         <div className={cx('input')}>
-        <input className={cx("input-text")}
+        <input onClick={handleShow}  className={cx(show)}
           type='text'
           value={query}
           onChange={(e) => setQuery(e.target.value)}
@@ -114,6 +114,7 @@ const Youtube = () => {
                   <img
                     className={cx('imgta')}
                      src={item.snippet.thumbnails.high.url}
+                     alt=''
                   />
                   <div className={cx('name')}>
                     

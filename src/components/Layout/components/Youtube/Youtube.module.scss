@@ -25,9 +25,11 @@
 .title{
     color: #fff;
 }
+.input{
+    width: auto;
+}
 
-
-.input-text{
+.show{
     background-color: #363041;
     position: relative;
     width: 20px;
@@ -36,6 +38,7 @@
     padding: 10px;
     transition-duration: 500ms;
     cursor: pointer;
+    color: transparent;
     font-size: 15px;
     border: 1px solid white;
     overflow: hidden;
@@ -47,11 +50,12 @@
         border: 1px solid #FF9950;
     }
 }
-.input-text:focus {
-    cursor: pointer;
+.showing{
         padding-left:40px ;
         width: 400px;
-        height: 20px;
+        height: 42px;
+        transition-duration: 500ms;
+        font-size: 14px;
         cursor: text;
         border-radius: 22px;
         color: #fff;
@@ -77,6 +81,7 @@
 }
 .listmv{
     padding: 20px 0px;
+    padding-top: 45px;
 }
 .itemv{
     padding: 20px 50px;

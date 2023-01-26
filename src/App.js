@@ -29,6 +29,7 @@ function App() {
   const [album, setAlbum] = useState(1);
   const [anlist, setAnlist] = useState('none')
   const [chuyen , setChuyen] = useState(0)
+  const [momv, setMomv] = useState('none');
   const truyen = (active) =>{
     setAc(active)
   }
@@ -76,6 +77,14 @@ function App() {
     setChuyen(id)
     setMo1('none')
     }
+    if(id === 3){
+      setMomv('block')
+      setDong(dong === 'block' ? "none" : 'block');
+      }
+  }
+  const handleChuyenBack = () => {
+    setMomv('none')
+    setDong('block')
   }
   const handlePlaySong = (id) => {
     if(id < 2){
@@ -89,13 +98,13 @@ function App() {
     setDong1('none');
     setMo2('none')
     const maxLength = dataSong.length;
-    console.log(maxLength)
     const newSong = dataSong.find((item) => item.id === id);
     setSong(newSong);
     setBo(bo === true ? false : true)
     setSonging(id)
     setAnlist('none');
     setXoay('img')
+    setMomv('none')
   };
 
   return (
@@ -117,6 +126,8 @@ function App() {
                 element={
                   <Song.Provider
                     value={{
+                      handleChuyenBack,
+                      momv,
                       chuyen,
                       handleChuyen,
                       onlist,
