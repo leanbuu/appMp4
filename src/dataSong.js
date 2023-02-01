@@ -19,7 +19,7 @@ export const dataSong=[
         casi: ' AMEE, Hoàng Dũng',
         time: '4p09',
         danhmuc: 2,
-        src: 'https://vnno-pt-1-tf-mp3-s1-zmp3.zmdcdn.me/7f62af55b6125f4c0603/27793806106737670?authen=exp=1674874959~acl=/7f62af55b6125f4c0603/*~hmac=5890516b684a072231bf0643b75cf1c2&fs=MTY3NDmUsICwMjE1OTI1N3x3ZWJWNnwwfDExMy4xODUdUngNzgdUngMjU1'
+        src: 'https://vnno-zn-5-tf-mp3-s1-zmp3.zmdcdn.me/9daf0dde1e99f7c7ae88/6215542468185390872?authen=exp=1675396804~acl=/9daf0dde1e99f7c7ae88/*~hmac=e9d2f5138cfdcb679e0acb3e45197214&fs=MTY3NTIyNDAwNDkyMnx3ZWJWNnwwfDExMy4xODUdUngNzIdUngNDI'
     },
     {   
         id: 4,
@@ -48,7 +48,7 @@ export const dataSong=[
         casi: ' GREY D',
         time: '3p46',
         danhmuc: 2,
-        src: 'https://vnno-vn-6-tf-mp3-s1-zmp3.zmdcdn.me/55226a6e9c2f75712c3e/3766125175965205028?authen=exp=1674874831~acl=/55226a6e9c2f75712c3e/*~hmac=3104704de98c34aa95ad406a80b6997f&fs=MTY3NDmUsICwMjAzMTEyMnx3ZWJWNnwwfDI3LjMdUngMjI1LjI0NQ'    
+        src: 'https://vnno-vn-6-tf-mp3-s1-zmp3.zmdcdn.me/55226a6e9c2f75712c3e/3766125175965205028?authen=exp=1675396273~acl=/55226a6e9c2f75712c3e/*~hmac=b2b941c51fd36313c74c375c6953a5a2&fs=MTY3NTIyMzQ3MzMyOXx3ZWJWNnwwfDE3MS4yMjYdUngMTk0Ljg'    
     },
     {   
         id: 7,
@@ -122,7 +122,7 @@ export const dataSong=[
         casi: ' Sơn Tùng M-TP',
         time: '4p08',
         danhmuc: 2,
-        src: 'https://vnno-vn-6-tf-mp3-s1-zmp3.zmdcdn.me/4480ef703f34d66a8f25/2437095196596911444?authen=exp=1674874180~acl=/4480ef703f34d66a8f25/*~hmac=84c52875b70657e08a99cb383e62c42c&fs=MTY3NDmUsICwMTM4MDAwMnx3ZWJWNnwwfDExMy4xNjYdUngMTI2LjE0MQ'    
+        src: 'https://vnno-vn-6-tf-mp3-s1-zmp3.zmdcdn.me/4480ef703f34d66a8f25/2437095196596911444?authen=exp=1675396751~acl=/4480ef703f34d66a8f25/*~hmac=0494fa9ee797a5fdc8b3386f8aef4cec&fs=MTY3NTIyMzk1MTM3N3x3ZWJWNnwwfDExMy4xODUdUngNzIdUngNDI'    
     },
     {   
         id: 15,
@@ -132,7 +132,7 @@ export const dataSong=[
         casi: ' MIN, ĐEN, JustaTee',
         time: '3p51',
         danhmuc: 2,
-        src: 'https://stream.nixcdn.com/NhacCuaTui992/ViYeuCuDamDau-MINDenJustaTee-6135242.mp3?st=qbas-jrzo4GFp1rPLPCQfg&e=1672722073&t=1672635859927'    
+        src: 'https://vnno-pt-1-tf-mp3-s1-zmp3.zmdcdn.me/3b03039224d5cd8b94c4/1848074508364787118?authen=exp=1675396934~acl=/3b03039224d5cd8b94c4/*~hmac=9b6c0e968cd232bef4e164b8b7808b7e&fs=MTY3NTIyNDEzNDmUsIC2OXx3ZWJWNnwwfDExMy4xODUdUngNzIdUngNDI'    
     },
     {   
         id: 16,
@@ -162,7 +162,7 @@ export const dataSong=[
         casi: ' AMEE, Hứa Kim Tuyền',
         time: '3p49',
         danhmuc: 2,
-        src: 'https://stream.nixcdn.com/NhacCuaTui2022/HaiMuoiHai22-HuaKimTuyenAMEE-7231237.mp3?st=M96WgExf0L1-Qxf-QdsJAw&e=1673008475&t=1672922117667'    
+        src: 'https://vnno-vn-6-tf-mp3-s1-zmp3.zmdcdn.me/ca2d340d954c7c12255d/8465681852686731330?authen=exp=1675396834~acl=/ca2d340d954c7c12255d/*~hmac=4b90a852ffb039441a1112aa2f9d6a12&fs=MTY3NTIyNDAzNDgzMnx3ZWJWNnwxMDE1NDI0NjmUsICyfDEdUngNTMdUngNTQdUngMjE3'    
     },
     {   
         id:19,
@@ -172,7 +172,7 @@ export const dataSong=[
         casi: ' AMEE',
         time: '2p51',
         danhmuc: 2,
-        src: 'https://stream.nixcdn.com/NhacCuaTui1011/TinhBanDieuKyMasewRemix-AMee-6942490.mp3?st=D1YtvfDj7YMZ1kCM5XHjUQ&e=1673008654&t=1672922294867'    
+        src: 'https://vnno-pt-3-tf-mp3-s1-zmp3.zmdcdn.me/e9c96cfc07bceee2b7ad/1123587497206867753?authen=exp=1675396561~acl=/e9c96cfc07bceee2b7ad/*~hmac=a6d9cd954309c1b99dcecf5bea17a800&fs=MTY3NTIyMzmUsIC2MTIzNHx3ZWJWNnwxMDQyNTEwMTQ0fDE0LjE4MC4yMTYdUngMTU'    
     },
     {   
         id: 20,
@@ -182,7 +182,7 @@ export const dataSong=[
         casi: 'Tăng Duy Tân',
         time: '3p04',
         danhmuc: 2,
-        src: 'https://vnno-vn-6-tf-mp3-s1-zmp3.zmdcdn.me/ddb4cae628a7c1f998b6/6353349108568264070?authen=exp=1674875665~acl=/ddb4cae628a7c1f998b6/*~hmac=caecff6df90478bbca5f2c18ffdb14c3&fs=MTY3NDmUsICwMjg2NTA4MXx3ZWJWNnwwfDExMy4xODUdUngNzgdUngMjU1'    
+        src: 'https://vnno-pt-2-tf-mp3-s1-zmp3.zmdcdn.me/7075a5d9699880c6d989/5539826723851924862?authen=exp=1675397279~acl=/7075a5d9699880c6d989/*~hmac=2afab4f4ccc747e6830dd2d18f2e668f&fs=MTY3NTIyNDQ3OTIxMXx3ZWJWNnwwfDExMy4xODUdUngNzIdUngNDI'    
     },
     {   
         id: 21,
@@ -191,7 +191,7 @@ export const dataSong=[
         casi: 'Pháo',
         time: '3p14',
         danhmuc: 2,
-        src: 'https://stream.nixcdn.com/NhacCuaTui1027/HaiPhutHon-PhaoCM1X-7198435.mp3?st=rp6bSpXzt9csMwEPoxQV6g&e=1673068210&t=1672981904677'    
+        src: 'https://vnno-vn-5-tf-mp3-s1-zmp3.zmdcdn.me/d49a0b4e1109f857a118/706236833367217355?authen=exp=1675397125~acl=/d49a0b4e1109f857a118/*~hmac=562d7c915602ccbed9d648478f88c278&fs=MTY3NTIyNDMyNTgxNHx3ZWJWNnwwfDExMy4xODUdUngNzIdUngNDI'    
     },
     {   
         id: 22,
@@ -200,7 +200,7 @@ export const dataSong=[
         casi: 'Hoàng Dũng',
         time: '4p15',
         danhmuc: 2,
-        src: 'https://stream.nixcdn.com/NhacCuaTui1001/NangTho-HoangDung-6413381.mp3?st=uVnzdmtqMca3w1YcrZREMA&e=1673081490&t=1672995371070'    
+        src: 'https://vnno-vn-5-tf-mp3-s1-zmp3.zmdcdn.me/c18eaa80f3c11a9f43d0/2761020466868508166?authen=exp=1675397087~acl=/c18eaa80f3c11a9f43d0/*~hmac=abd60b5dfc04258acc2bf30b6641b755&fs=MTY3NTIyNDI4NzQxNXx3ZWJWNnwxMDI0MDk1MDM5fDEyNS4yMzQdUngMjUyLjEzOA'    
     },
     {   
         id: 23,
@@ -209,7 +209,7 @@ export const dataSong=[
         casi: 'ERIK',
         time: '3p44',
         danhmuc: 2,
-        src: 'https://stream.nixcdn.com/NhacCuaTui1025/YeuDuongKhoQuaThiChayVeKhocVoiAnh-ERIK-7128950.mp3?st=e-K0UBXWLVj-kJwU5mWzvg&e=1673082679&t=1672996487056'    
+        src: 'https://vnno-pt-2-tf-mp3-s1-zmp3.zmdcdn.me/baa2ed6e9d2f74712d3e/7034223956028953907?authen=exp=1675396729~acl=/baa2ed6e9d2f74712d3e/*~hmac=da24a6a8453832016cda5a0bccfce887&fs=MTY3NTIyMzkyOTM5Nnx3ZWJWNnwwfDEdUngNTQdUngMTI4Ljg'    
     },
     {   
         id: 24,
@@ -218,7 +218,7 @@ export const dataSong=[
         casi: 'ERIK',
         time: '3p05',
         danhmuc: 2,
-        src: 'https://stream.nixcdn.com/NhacCuaTui1021/DiuDangEmDen-ERIKNinjaZ-7078877.mp3?st=OrY2qkQUlThuq74LcvDHpg&e=1673083234&t=1672997064838'    
+        src: 'https://vnno-zn-5-tf-mp3-s1-zmp3.zmdcdn.me/ef10de27f16618384177/1516851549353123477?authen=exp=1675397091~acl=/ef10de27f16618384177/*~hmac=87ba2633011fc82b631534c5ca5531d6&fs=MTY3NTIyNDI5MTk3NXx3ZWJWNnwwfDExNi4xMDmUsICdUngMTY1LjU0'    
     },
     {   
         id: 25,
@@ -227,7 +227,7 @@ export const dataSong=[
         casi: 'HIEUTHUHAI',
         time: '3p12',
         danhmuc: 2,
-        src: 'https://stream.nixcdn.com/NhacCuaTui2032/NguMotMinhtinhRatTinh-HIEUTHUHAINegavKewtiie-8397765.mp3?st=uAoYeWtECkk0_X0KiJHm3w&e=1673083507&t=1672997108391'    
+        src: 'https://vnno-vn-6-tf-mp3-s1-zmp3.zmdcdn.me/97c6161b4f5ba605ff4a/722226181788818609?authen=exp=1675397102~acl=/97c6161b4f5ba605ff4a/*~hmac=1bf8d0779de7cd1f924d564d3216fb7d&fs=MTY3NTIyNDMwMjQxNnx3ZWJWNnwwfDExMy4xNjEdUngNjQdUngMTEx'    
     },
     {   
         id: 26,
